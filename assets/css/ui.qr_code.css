@@ -1,0 +1,315 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ QR코드 class="qr_code" ]
+********************************************************************************************************************************************************************************************* */
+.ui_qr_code {background-color:#ffffff; overflow-x:hidden; overflow-y:auto; opacity:0; position:fixed; right:0; left:0; top:100%; margin:0 auto; max-height:100vh; height:100%; max-width:540px; width:100%;}
+.ui_qr_code {transition:top 0.4s ease-in-out, opacity 0.4s 0.2s;}
+
+/* setting */
+.ui_qr_code .head {background-color:#ffffff; display:flex; align-items:center; box-sizing:border-box; position:sticky; left:0; top:0; padding:0 16px 11px 16px; height:56px; width:100%; z-index:-1;}
+.ui_qr_code .head {transition:opacity 0.2s;}
+.ui_qr_code .head .tit_18 {text-indent:8px;}
+.ui_qr_code .head .icon_sprite_32 {background-image:url(../images/common/icon_32x32.png); background-size:494px auto;}
+.ui_qr_code .head .btn_set {margin-left:auto;}
+
+.ui_qr_code .qr_pymnt_wrap {padding-bottom:150px;}
+.ui_qr_code .box_shape {position:relative;}
+
+/* 체크박스띄우기 */
+.ui_qr_code .qr_pymnt .form_chk,
+.ui_qr_code .prd_set .form_chk {/* background:rgba(0,0,0,0.3); */ position:absolute; left:0; top:0; padding:0; height:100%; width:100%;}
+.ui_qr_code .qr_pymnt .form_chk .icon,
+.ui_qr_code .prd_set .form_chk .icon {left:auto; right:0; top:50%; margin-top:-10px;}
+
+/* 비활성화 */
+.disable .form_chk input ~ .icon,
+.disable .form_chk input ~ .txt {cursor:default;}
+.disable .form_chk input ~ .icon {background-color:#eeeeee; border:1px solid #eeeeee;}
+.disable .form_chk input ~ .icon:before {width:0;}
+.disable .form_chk input ~ .icon:after {transition:none; width:13px;}
+.disable .form_chk input ~ .txt {color:#dddddd;}
+
+/* QR닫기버튼 */
+.close_qr {background-color:#37d243; border-radius:50%; box-shadow:0 4px 10px rgba(0,0,0,0.2); position:fixed; left:50%; bottom:100%; margin-left:-24px; height:48px; width:48px; z-index:-1;}
+.close_qr .deco {display:block; position:absolute; left:50%; top:50%; margin:-9px 0 0 -9px; height:18px; width:18px;}
+.close_qr .deco {transition:transform 0.3s ease-in-out;}
+.close_qr .deco i {background-color:#ffffff; display:block; border-radius:3px; position:absolute; left:50%; top:50%; margin:-9px 0 0 -1px; height:100%; width:2px;}
+.close_qr .deco .strk_01 {transform:rotate(45deg);}
+.close_qr .deco .strk_02 {transform:rotate(-45deg);}
+.close_qr .deco .strk_01,
+.close_qr .deco .strk_02 {transition:transform 0.3s 0.1s ease-in-out;}
+.close_qr.hide {animation:qr_hide 0.3s 0.4s forwards;}
+@keyframes qr_hide {
+	0% {bottom:44px;}
+	100% {bottom:-20%;}
+}
+.close_qr.hide .deco {transform:rotate(-90deg);}
+.close_qr.hide .strk_01 {transform:rotate(0);}
+.close_qr.hide .strk_02 {transform:rotate(0);}
+
+/* QR코드 열림 */
+body.on_qr {}
+body.on_qr {overflow:hidden;}
+body.on_qr #header {z-index:100;}
+body.on_qr .ui_qr_code {opacity:1; top:0; z-index:9999;}
+body.on_qr .ui_qr_code .head {z-index:100;}
+body.on_qr .close_qr {bottom:44px; z-index:999;}
+
+
+/* ------------------------------ [ QR코드 ] ------------------------------------------------------------------------------------------------------------------------- */
+.qr_wrap {}
+.qr_wrap .qr_box {/* background-color:#ccc; */ overflow:hidden; border-radius:24px; box-sizing:border-box; position:relative; margin:0 auto; padding:4px; height:272px; width:272px;}
+.qr_wrap .qr_box:before {content:""; position:absolute; left:0; top:0; height:100%; width:100%;}
+.qr_wrap .qr_box .code_area {background-color:#ffffff; overflow:hidden; border-radius:20px; box-sizing:border-box; position:relative; padding:17px; height:100%; width:100%; z-index:2;}
+.qr_wrap .qr_box .code_area:before {background:url(../images/common/icon_loading.png) no-repeat 0 0; background-size:100% auto; content:""; position:absolute; left:50%; top:50%; margin:-28px 0 0 -28px; height:56px; width:56px;}
+.qr_wrap .qr_box .code_area:before {animation:load 0.7s linear infinite;}
+.qr_wrap .qr_box .code_area img {display:block; object-fit:contain; position:relative; height:100%; width:100%;}
+@keyframes load {
+	0% {transform:rotate(0);}
+	100% {transform:rotate(360deg);}
+}
+
+/* 남은시간 */
+.qr_wrap .time {overflow:hidden; text-align:center; margin-top:11px;}
+.qr_wrap .time p {display:inline-block; font-size:12px; line-height:32px;}
+.qr_wrap .time p strong {font-size:14px;}
+.qr_wrap .time .refresh {display:inline-block; vertical-align:middle;}
+.qr_wrap .time .refresh.on {animation:refresh 1.2s ease-in-out forwards;}
+@keyframes refresh {
+	0% {transform:scale(0.9);}
+	20% {transform:scale(1);}
+	26% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+/* ==== 메세지 ==== */
+.qr_wrap .info_copy {text-align:center; position:relative; padding-top:16px;}
+.qr_wrap .info_copy > p {display:inline-block; color:#666666; font-size:14px; font-weight:bold; line-height:24px; position:relative; padding-right:32px;}
+.qr_wrap .info_copy > p:after {background:url(../images/qr_code/icon_smile.png) no-repeat 0 0; background-size:cover; content:""; position:absolute; right:0; right:0; height:24px; width:24px;}
+
+/* 선택별 메세지 */
+.info_copy .fade_msg {}
+.info_copy .fade_msg div {text-align:center; opacity:0; position:absolute; left:50%; top:0; transform:translateX(-50%); width:100%; z-index:-1;}
+.info_copy .fade_msg div p {background-color:#222222; border-radius:20px; box-sizing:border-box; display:inline-block; color:#ffffff; font-size:14px; font-weight:bold; line-height:1em; padding:13px 32px; height:39px; min-width:210px;}
+.info_copy .fade_msg div p:after {background-position:0 0; background-repeat:no-repeat; background-size:cover; content:""; display:inline-block; vertical-align:middle; margin-left:6px; height:17px; width:17px;}
+.info_copy .fade_msg .pickup p:after {background-image:url(../images/common/icon_ticket.svg);}
+.info_copy .fade_msg .point p:after {background-image:url(../images/common/icon_point.svg);}
+.info_copy .fade_msg .paid p:after {background-image:url(../images/common/icon_paid.svg);}
+.info_copy .fade_msg .coupon p:after {background-image:url(../images/common/icon_ticket.svg);}
+.info_copy .fade_msg .coupon_max p:after {display:none;}
+.info_copy .fade_msg div.active {animation:msg_show 3.5s forwards; /* opacity:1; top:8px; z-index:1; */}
+@keyframes msg_show {
+	0% {opacity:0; top:0; z-index:-1;}
+	1% {opacity:1; top:0; z-index:1;}
+	13% {opacity:1; top:8px; z-index:1;}
+	90% {opacity:1; top:8px; z-index:1;}
+	100% {opacity:0; top:0; z-index:-1;}
+}
+
+
+/* ------------------------------ [ QR결제수단 ] ------------------------------------------------------------------------------------------------------------------------- */
+.qr_pymnt {padding:28px 16px 0 16px; margin-top:24px;}
+.qr_pymnt .bg_box_flx {overflow:inherit; margin-top:0;}
+.qr_pymnt .box_shape {position:relative; border-radius:16px;}
+.qr_pymnt .cotn {border-radius:14px; padding:16px; height:100%;}
+.qr_pymnt .cotn .txt_link {display:block;}
+.qr_pymnt .cotn .form_chk .icon {right:14px;}
+.qr_pymnt .cotn .tit {color:#666666; font-size:14px; font-weight:bold; margin-bottom:6px;}
+
+/* 포인트 */
+.qr_pymnt .point .box_deco {background-color:#ccc; position:absolute; left:0; top:0; height:100%; width:100%;}
+.qr_pymnt .point .price p {font-weight:bold;}
+.qr_pymnt .point .price p strong {font-size:20px;}
+
+/* ==== 간편결제수단 ==== */
+.qr_pymnt .easy_pay .cotn {display:flex; align-items:center;}
+.qr_pymnt .easy_pay > .txt_link {position:absolute; right:8px; top:-28px;}
+
+/* 간편결제있음 */
+.qr_pymnt .has_easy .txt_link {display:block; position:relative; margin-bottom:6px; z-index:1;}
+.qr_pymnt .has_easy p {font-size:18px; font-weight:bold;}
+
+/* 간편결제없음 */
+.qr_pymnt .none_easy {width:100%;}
+.qr_pymnt .none_easy .txt_link {text-align:center;}
+
+/* ==== 포인트, 결제수단활성화 ==== */
+.qr_pymnt .box_shape.on {background:linear-gradient(to right, #50e2c4, #895eee);}
+
+/* ------------------------------ [ 주문한 상품목록:픽업/예약 ] ------------------------------------------------------------------------------------------------------------------ */
+.pick_prd {margin-top:11px;}
+.pick_prd .prd_li {overflow:inherit;}
+.pick_prd .prd_li.horzn_style01 > ul > li:first-child {border-top:none;}
+.pick_prd .prd_li.horzn_style01 > ul > li {border-bottom:0; padding:0;}
+.pick_prd .prd_li.horzn_style01 > ul > li ~ li {margin-top:11px;}
+.pick_prd .prd_li.horzn_style01 .prd_set {overflow:inherit; padding:0 16px;}
+.pick_prd .box_shape > .cotn {overflow:inherit; padding:16px;}
+.pick_prd .prd_li.horzn_style01 .prd_set .obj_wrap {align-items:flex-start; position:relative;}
+.pick_prd .prd_li.horzn_style01 .prd_set .txt_wrap {margin-top:6px; width:calc(100% - 125px);}
+
+.pick_prd .prd_set .tit {color:#666666; font-size:14px; font-weight:bold; margin-bottom:6px;}
+.pick_prd .txt_wrap .date {font-size:13px;}
+.pick_prd .txt_wrap .store_loc {color:#666666; font-size:13px; margin-top:4px;}
+.pick_prd .obj_wrap .input_chk {right:0;}
+
+/* 툴팁 */
+.pick_prd .prd_set .btn_tip {vertical-align:-3px; margin-left:4px; height:16px; width:16px;}
+.pick_prd .prd_set .tooltip {left:auto; left:126px; top:40px; width:201px;}
+.pick_prd .prd_set .tooltip:before {background:url(../images/common/icon_tip_arrow.svg) no-repeat 0 0; background-size:cover; content:""; position:absolute; left:32px; top:-9px; height:12px; width:16px;}
+.pick_prd .prd_set .tooltip .cotn {}
+.pick_prd .prd_set .tooltip p {color:#666666; font-size:14px;}
+.pick_prd .prd_set .tooltip .btn_close {}
+
+
+/* ------------------------------ [ 쿠폰 ] ------------------------------------------------------------------------------------------------------------------------------ */
+.ui_qr_code .cp_wrap {overflow:hidden; padding:0;}
+.ui_qr_code .cp_wrap .cp_enroll {position:relative;}
+.ui_qr_code .cp_wrap .cp_enroll .amount {}
+.ui_qr_code .cp_wrap .cp_enroll .amount p {color:#666666; font-size:14px;}
+.ui_qr_code .cp_wrap .cp_enroll .input_chk {position:inherit; top:auto; margin-top:0; height:auto; width:auto;}
+
+.ui_qr_code .cp_cnt .top_cnt {justify-content:flex-start; position:relative;}
+
+/* 쿠폰:선택전 */
+.ui_qr_code .cp_set:before {background:linear-gradient(62deg, #50e2c4 7%, #895eee 100%); content:""; border-radius:24px; opacity:0; position:absolute; left:0; top:0; height:0; width:100%;}
+.ui_qr_code .cp_box {background:#eeeeee;}
+.ui_qr_code .cp_box .cp_cnt:before,
+.ui_qr_code .cp_box .cp_cnt:after {background-color:#eeeeee;}
+.ui_qr_code .cp_box .cp_cnt .input_chk:after {background-color:#f9f9f9;}
+.ui_qr_code .cp_box .cp_cnt .form_chk .icon {background-color:#ffffff;}
+
+/* 쿠폰:선택후 */
+.ui_qr_code .cp_set.on:before {opacity:1; height:100%;}
+.ui_qr_code .cp_set.on .cp_box {background:transparent;}
+.ui_qr_code .cp_set.on .cp_box .cp_cnt:before,
+.ui_qr_code .cp_set.on .cp_box .cp_cnt:after {background-color:#836bea;}
+
+/* 쿠폰만있을때 */
+.ui_qr_code .cpn_none {overflow:hidden; margin-top:32px; padding:0 16px;}
+.ui_qr_code .cpn_none .cotn {display:flex; flex-direction:column; align-items:center; padding:28px 16px;}
+.ui_qr_code .cpn_none p {text-align:center;}
+.ui_qr_code .cpn_none .btn_wrap {margin-top:16px;}
+.ui_qr_code .cpn_none .btn_wrap .btn {width:150px;}
+
+/* 쿠폰 링크 있을 시 */
+.ui_qr_code .cp_box.type01 .cp_cnt .go_view{width:85%;}
+.ui_qr_code .cp_box.type01 .cp_cnt .top_cnt .form_chk .icon{margin:-10px -10px 0 0;right:50%;}
+.ui_qr_code .cp_box.type01 .cp_cnt .top_cnt .form_chk{width:15%;left:auto}
+
+/* ------------------------------ [ 선택별 색상변경 ] ------------------------------------------------------------------------------------------------------------------------ */
+
+/*
+	＊.box_shaped:before＊
+	- input:checked > 색상바뀌는장식
+*/
+
+.qr_box:before {transition:0.4s;}
+.qr_box:before {background:linear-gradient(45deg, #50e2c4 10%, #895eee);}
+
+/* transition 한번에 선언 */
+.qr_pymnt_wrap .box_shape,
+.qr_pymnt_wrap .box_shape .cotn {transition:background 0.3s;}
+.qr_pymnt .tit,
+.qr_pymnt .price,
+.qr_pymnt .price strong,
+.qr_pymnt .txt_link,
+.qr_pymnt p {transition:color 0.1s;}
+.qr_pymnt_wrap .cp_set .txt_area .tit,
+.qr_pymnt_wrap .cp_set .txt_area .label p,
+.qr_pymnt_wrap .cp_set .btm_cnt .tit,
+.qr_pymnt_wrap .cp_set .btm_cnt p {transition:color 0.1s;}
+.qr_pymnt_wrap .cp_set:before {transition:height 0.3s ease-in-out, opacity 0.1s 0.1s;}
+.qr_pymnt_wrap .cp_set.on .cp_box {transition:background 0.5s;}
+.qr_pymnt_wrap .cp_set.on .cp_box .cp_cnt:before {transition:background 0.3s 0.1s;}
+.qr_pymnt_wrap .cp_set.on .cp_box .cp_cnt:after {transition:background 0.3s 0.3s;}
+
+
+/* ==== 주문상품:선택 ==== */
+.pick_prd .prd_set .box_shape {border-radius:16px;}
+.pick_prd .prd_set .box_shape > .cotn {border-radius:15px; /* z-index:1; */}
+.pick_prd .prd_set .box_shape:before {background:linear-gradient(90deg, #50e2c4 10%, #895eee); content:""; left:0; border-radius:17px; position:absolute; left:0; top:0; opacity:0; height:0; width:100%;}
+.pick_prd .prd_set .box_shape:before {transition:height 0.5s, opacity 0.3s 0.1s;}
+/* 선택:class="on" */
+.pick_prd .prd_set.on .box_shape:before {opacity:1; height:100%;}
+
+
+/* ==== 비활성스타일 class="disable" ==== */
+/* 결제비활성 */
+.qr_pymnt.disable .tit,
+.qr_pymnt.disable .price,
+.qr_pymnt.disable .price strong,
+.qr_pymnt.disable .txt_link,
+.qr_pymnt.disable p {color:#dddddd;}
+
+/* 주문상품비활성 */
+.pick_prd.disable .prd_set .tit,
+.pick_prd.disable .prd_set .name,
+.pick_prd.disable .txt_wrap .date,
+.pick_prd.disable .txt_wrap .store_loc {color:#dddddd;}
+.pick_prd.disable .img {opacity:0.4;}
+.pick_prd.disable .btn_tip .q_mark_16 {background-image:url(../images/common/icon_qmark_02.svg);}
+
+/* 쿠폰비활성 */
+.cp_wrap.disable .cp_enroll .amount p,
+.cp_wrap.disable .cp_enroll .form_chk .txt {color:#dddddd;}
+.cp_wrap.disable .cp_set .cp_box {background:#f6f6f6;}
+.cp_wrap.disable .cp_set .img_area {opacity:0.4;}
+.cp_wrap.disable .cp_set .txt_area .tit,
+.cp_wrap.disable .cp_set .txt_area .label p,
+.cp_wrap.disable .cp_set .btm_cnt .tit,
+.cp_wrap.disable .cp_set .btm_cnt p,
+.cp_wrap.disable .cp_set .cou_day,
+.cp_wrap.disable .cp_set .txt_area p {color:#dddddd;}
+.cp_wrap.disable .cp_set .cp_box .cp_cnt:before,
+.cp_wrap.disable .cp_set .cp_box .cp_cnt:after {background-color:#f6f6f6;}
+.cp_wrap.disable .cp_cnt .top_cnt .form_chk .icon {background-color:#eeeeee;}
+.cp_wrap.disable .cp_cnt .top_cnt .input_chk:after {background-color:#f9f9f9;}
+.cp_wrap.disable .cp_set .cp_box .btm_box .present {opacity:0.4; z-index:0;}
+
+/* ==== 선택별 class, QR코드 영역 ==== */
+/* 포인트:선택 class="act_point" */
+.act_point .qr_box:before {background:linear-gradient(45deg, #dde66f, #37d243);}
+
+/* 결제:선택 class="act_easy" */
+.act_easy .qr_box:before {background:linear-gradient(45deg, #f5aad8, #e30055);}
+
+/* 주문상품:선택 class="selec_prd" */
+.selec_prd {}
+
+/* ==== 포인트+결제:중복선택 ==== */
+/* QR코드박스  */
+.act_point.act_easy .qr_box:before {background:linear-gradient(45deg, #f5aad8, #e30055);}
+
+/* 포인트 */
+.on_all .point.on:before {background:linear-gradient(90deg, #f5aad8, #e30055);}
+.on_all .point.on input:checked ~ .icon {background-color:#c92e68; border-color:#c92e68;}
+
+
+/* ------------------------------ [ 이벤트 배너 ] -------------------------------------------------------------------------------------------------------------------------- */
+.event_wrap {overflow:hidden; margin-top:32px; padding:0 16px;}
+.event_wrap .event_set {overflow:hidden; position:relative;}
+.event_wrap .event_set ~ .event_set {margin-top:16px;}
+.event_wrap .event_set .img {}
+.event_wrap .event_set .img img {display:block; width:100%;}
+
+
+/* *********************************************************************************************************************************************************************************************
+														[ 레이어팝업 ]
+********************************************************************************************************************************************************************************************* */
+/* ------------------------------ [ QR 간편결제 ] ------------------------------------------------------------------------------------------------------------------------- */
+.qr_pop_pay {}
+.qr_pop_pay .head {margin-bottom:11px;}
+.qr_pop_pay .pymnt_method {padding-bottom:30px;}
+.qr_pop_pay .other_pymnt {display:flex; flex-wrap:wrap; margin:0 0 0 -11px;}
+.qr_pop_pay .other_pymnt .box_shape {margin:11px 0 0 11px; width:calc(50% - 11px);}
+.qr_pop_pay .other_pymnt .cotn.close,
+.qr_pop_pay .other_pymnt .cotn.open {padding:22px 16px; height:61px;}
+
+.qr_pop_pay .penny {overflow:hidden; margin-top:16px; padding:0 8px;}
+.qr_pop_pay .penny .input_chk {float:left;}
+.qr_pop_pay .penny .input_chk .txt {font-size:14px;}
+.qr_pop_pay .penny .input_chk .txt strong {color:#222222; font-size:16px; vertical-align:middle; padding-left:4px;}
+.qr_pop_pay .penny .txt_link {float:right;}
+
+.qr_pop_pay .save_mthd {border-top:1px solid #eeeeee; margin-top:16px; padding:16px 8px 0 8px;}

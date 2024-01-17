@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 무인매장 ]
+********************************************************************************************************************************************************************************************* */
+.unman_store .tit_24 {padding:20px 16px 11px 24px;}
+.unman_store .tit_back .tit_18,
+.unman_store .btn_area .alarm,
+.unman_store .btn_area .cart {display:block;}
+
+.unman_store .info_area {padding:0 24px;}
+.unman_store .info_area .tit_copy {padding:0;}
+.unman_store .store_ent {padding-top:32px;}
+.unman_store .store_ent .box_wrap {display:flex; justify-content:space-between; padding:0 16px;}
+.unman_store .store_ent .box_wrap .bg_box_wrap {position:relative; width:100%; height:100%;}
+.unman_store .store_ent .box_wrap .bg_box {display:flex; justify-content:center; align-items:center; flex-direction:column; width:100%; height:166px; border-radius:24px; background-color:#f6f6f6; box-sizing:border-box;}
+.unman_store .store_ent .box_wrap .bg_box_wrap  + .bg_box_wrap {margin-left:11px;}
+.unman_store .store_ent .bg_box .tit_18 {margin-top:11px; text-align:center;}
+.unman_store .store_ent .bg_box .icon_logo {display:block; width:64px; height:64px;}
+.unman_store .store_ent .bg_box .icon_logo.cu {background:url(../images/common/icon_cu_64X64.png) 0 0 no-repeat; background-size:64px 64px;}
+.unman_store .store_ent .bg_box .icon_logo.buyself {background:url(../images/common/icon_buyself_64X64.png) 0 0 no-repeat; background-size:64px 64px;}
+.unman_store .store_ent .bg_box_wrap .noti_txt {margin-top:16px; color:#666; font-size:14px; text-align:center;}
+
+/* *********************************************************************************************************************************************************************************************
+														[ 레이어팝업 ]
+********************************************************************************************************************************************************************************************* */
+
+.store_pop .contents {overflow:hidden;}
+.store_pop.full_popup .data_none .mn_copy span {color:#37D243;}
+.store_pop.full_popup .data_none .cotn .sub_txt {color:#666666; padding-top:40px; font-size:14px;}

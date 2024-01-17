@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 쿠폰몰 ]
+********************************************************************************************************************************************************************************************* */
+.cp_mall .tit_back .tit_18,
+.cp_mall .header_wrap .cart,
+.cp_mall.main .header_wrap .alarm {display:block;}
+
+/* ------------------------------ [ 메인 ] ------------------------------------------------------------------------------------------------------------- */
+.cp_mall .bnr_slide_wrap {padding-top:16px;}
+.cp_mall.main .ev_list {padding:24px 32px 32px;}
+.cp_mall.main .ev_list ul {display:flex; flex-wrap:wrap; margin-left:-12px; text-align:center; overflow:hidden;}
+.cp_mall.main .ev_list ul li {position:relative; flex:none; width:calc(20% - 12px); margin-left:12px;}
+.cp_mall.main .ev_list ul li .ev_icon {display:block;}
+.cp_mall.main .ev_list ul li .ev_icon img {width:40px; height:40px; margin:0 auto;}
+.cp_mall.main .ev_list ul li .tit {margin-top:6px; font-size:12px; line-height:0.938em;}
+.cp_mall.main .sp_exhib .tit_wrap {position:relative; padding:0 24px 0 16px;}
+.cp_mall.main .sp_exhib .tit_24 {margin-bottom:0; padding-left:0;}
+.cp_mall.main .sp_exhib .tit_wrap .go_view  i {position:absolute; top:0; right:16px;}
+.cp_mall.main .sp_exhib .tit_wrap .go_view i {transform:rotate(-90deg);}
+.cp_mall.main .sp_exhib .tab_menu_bg {padding-top:16px;}
+.cp_mall.main .sp_exhib .prd_li > ul {margin-top:-8px;}
+.cp_mall.main .sp_exhib .prd_li > ul > li {margin-top:32px;}
+/* .cp_mall.main .sp_exhib ~ .sp_exhib {padding-top:55px;} */
+.cp_mall.main .ev_list + .sp_exhib{margin-top:8px;}
+
+/* 배달금액권 */
+.cp_mall.main .sp_exhib .sp_exhib_list {position:relative; padding:16px; overflow:hidden;}
+.cp_mall.main .sp_exhib .sp_exhib_list .prd_set {width:100; height:100%;}
+.cp_mall.main .sp_exhib .sp_exhib_list .prd_set .obj_wrap {padding:9px 8px 0;}
+.cp_mall.main .sp_exhib .sp_exhib_list .prd_set .obj_wrap .price {padding-left:0;}
+
+/* 선물기획전 */
+.cp_mall .ev_bnr_wrap {display:flex; flex-wrap:wrap; margin:-16px 0 0 -16px; padding:16px 16px 0;}
+.ev_bnr_wrap .ev_bnr {position:relative; width:calc(50% - 16px); margin:16px 0 0 16px; border:3px solid #ddd; border-radius:28px; overflow:hidden; box-sizing:border-box;}
+.ev_bnr_wrap .ev_bnr .img_info_wrap {overflow:hidden; position:relative;}
+.ev_bnr_wrap .ev_bnr .img_info_wrap .img {overflow:hidden; width:100%; box-sizing:border-box; padding-top:100%; position:relative;}
+.ev_bnr_wrap .ev_bnr .img_info_wrap .img img {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:100%;}
+.ev_bnr_wrap .ev_tit {position:absolute; left:24px; top:24px;}
+
+/* ------------------------------ [ 상품목록 ] ------------------------------------------------------------------------------------------------------------- */
+.cp_mall.prd_list .prd_li {padding-top:24px;}
+
+/* ------------------------------ [ 상품상세 ] ------------------------------------------------------------------------------------------------------------- */
+.cp_mall.detail_prd .header_wrap .icon_sprite_32.home {display:block;}
+.cp_mall.detail_prd .e_date {background-color:#f6f6f6; border:1px solid #e8e8e8; border-radius:12px; box-sizing:border-box; color:#666666; display:inline-block; font-size:12px; font-weight:bold; line-height:23px; margin-top:11px; padding:0 8px; height:23px;}
+.cp_mall.detail_prd .mbox_wrap {overflow:hidden;}
+.cp_mall.detail_prd .mbox_wrap .mbox {border:1px solid #E8E8E8; border-radius:18px; box-sizing:border-box; color:#666666; display:inline-block; font-size:14px; font-weight:bold;  margin:0 8px 5px 0; padding:0 16px; line-height:36px; height:36px;}
+.cp_mall.detail_prd .txt_wrap {overflow:visible;}
+.cp_mall.detail_prd .txt_wrap .buy_info {overflow:visible; position:relative; margin:20px 0 24px;}
+.cp_mall.detail_prd .txt_wrap .buy_info .p_buy {font-size:14px; font-weight:bold;}
+.cp_mall.detail_prd .txt_wrap .tag_wrap {margin-top:0;}
+.cp_mall.detail_prd .txt_wrap .tag_wrap .tag {margin-right:8px;}
+
+/* ------------------------------ [ 이용안내 ] ------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.product.info .header_wrap .tit_back h1{display:block;}

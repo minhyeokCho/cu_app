@@ -1,0 +1,134 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 핫이슈상품 ]
+********************************************************************************************************************************************************************************************* */
+/* setting */
+.issue .tit_back .tit_18{display:block;}
+.issue.custom .sub {padding-bottom:0;}
+
+/* 단골점포 */
+.issue_wrap .str_value {display:flex; align-items:center; justify-content:space-between; padding:11px 24px 0;}
+.issue_wrap .str_value .like {display:flex; align-items:center;}
+.issue_wrap .str_value .like img {height:24px; width:24px;}
+.issue_wrap .str_value .like .no_good {display:block}
+.issue_wrap .str_value .like .good {display:none;}
+.issue_wrap .str_value .like.on .no_good {display:none;}
+.issue_wrap .str_value .like.on .good {display:block; }
+.issue_wrap .str_value .like p {margin-left:6px; font-size:20px; font-weight:bold;}
+
+.issue .custom_wrap {padding:0 16px;}
+.issue .custom_wrap .custom_li,
+.issue .custom_wrap .custom_none {padding-top:8px;}
+.issue .custom_wrap .custom_li.nomem,
+.issue .custom_wrap .custom_none.nomem {display:none;}
+
+.issue .custom_wrap .box_shape {display:flex; justify-content:space-between; padding:16px 16px 13px;}
+.issue .custom_wrap .box_shape .my_store {padding-left:4px;}
+.issue .box_shape .my_store .select_wrap {display:flex; }
+.issue .box_shape .my_store .select_wrap select {background-color:#f6f6f6; font-weight:bold; padding-right:8px;color:#222}
+.issue .custom_wrap .box_shape .my_store .left {padding-top:6px;}
+.issue .custom_wrap .box_shape .my_store .left p {font-size:14px; color:#666666;}
+.issue .custom_wrap .box_shape .my_store .left span {font-weight:bold; font-size:16px; color:#8059EA;padding-left:11px;}
+.issue .custom_wrap .custom_none .cotn {display:flex; justify-content:space-between; padding:16px 12px 16px 20px; border-radius:16px; box-sizing:border-box; background-color:#f6f6f6;}
+.issue .custom_wrap .noti_wrap {padding:11px 8px;}
+.issue .custom_wrap .noti_wrap .tit_copy {padding-left:0;}
+
+/* 베스트 상품 */
+.issue_search_wrap {padding-bottom:170px;position:relative;}
+.custom_wrap .tit_btn_wrap {padding:0 8px;}
+
+/* 지도영역 */
+.issue .map {height:calc(100vh - 221px);}
+.issue .map .btn_wrap {overflow:visible; position:fixed; left:50%; bottom:46px; transform:translateX(-50%); z-index:100;}
+.issue .map .btn_wrap {transition:bottom 0.4s;}
+.issue .map .btn_wrap .btn {box-shadow:0 4px 10px rgba(0,0,0,0.2); border-radius:24px; flex:none; padding:0 24px;}
+.issue .map .btn_wrap.stop {bottom:141px;}
+.map.dim:before {background-color:rgba(0, 0, 0, 0.6); content:""; position:absolute; left:0; top:0; height:100%; width:100%; z-index:1;}
+
+/* 슬라이드배너 */
+.issue_wrap .issue_slide_wrap .info_wrap {width:40%; position:absolute; left:20px; top:19.51%;}
+.issue_wrap .issue_slide_wrap .bnr_wrap {padding:0;}
+.issue_wrap .issue_slide_wrap .bnr_wrap .swiper {border-radius:0; padding-left:16px;}
+.issue_wrap .bnr_wrap .bnr_set {width:89.14%;}
+.issue_wrap .info_wrap .label .tit_label {display:inline-block; padding:4px 8px 3px; background:#222; border-radius:12px; color:#fff; font-size:11px; font-weight:bold;}
+.issue_wrap .info_wrap p {line-height: 1.2;}
+.issue_wrap .info_wrap .tit {font-size:18px; font-weight:bold; word-break:keep-all;}
+/* .issue_wrap .info_wrap .tit1 {margin-top:6px;} */
+.issue_wrap .info_wrap .txt {margin-top:6px; font-size:14px;}
+.issue_wrap .info_wrap .price {margin-top:6px; font-size:14px;}
+.issue_wrap .info_wrap .price strong {font-size:16px;padding-right:2px;}
+.issue_wrap .issue_slide_wrap .slide_paging {background-color:rgba(0,0,0,0.3); display:inline-block; position:relative; left:initial; right:initial; bottom:initial; height:20px; width:28px; line-height:inherit; border-radius:12px; color:#fff; font-size:11px;}
+.quick_cart {border-radius:12px; position:absolute; right:24px; bottom:24px; height:36px; width:36px; z-index:1;}
+.quick_cart .cart_amount {background-color:#37d243; display:none; border-radius:50%; box-sizing:border-box; color:#ffffff; font:bold 14px/1em robo; text-align:center; position:absolute; right:-5px; top:-5px; padding-top:5px; height:22px; width:22px;}
+.quick_cart.on .cart_amount {display:block;}
+.issue .store_list {padding:0;}
+
+/* 본인인증 */
+.issue.full_popup .contents {}
+.issue .agree_wrap {padding-bottom:150px;}
+.issue .agree_list {overflow:hidden;}
+.issue .agree_list ~ .agree_list .list_ui li:first-child {border-top:none;}
+.issue .agent_noti_wrap {padding:20px 24px;}
+.issue .agent_noti_wrap .info_area {margin-top:16px;}
+.issue .agent_noti_wrap .info_area .tit_copy {padding-left:0;}
+.issue .list_ui li:last-child {border-bottom:none;}
+.issue .sub_tit {padding:0 24px;}
+.issue .agree_wrap > .btn_wrap {margin-top:24px; padding:0 16px;}
+.issue .certify_wrap {padding:16px 16px 0;}
+
+.issue .certify_wrap .form_wrap  + .form_wrap {margin-top:32px;}
+.issue .certify_wrap .txt_input.frm_with.chk_wrn .form_txt input {padding-right:170px;}
+.issue .certify_wrap .txt_input.frm_with.chk_wrn .msg .icon_sprite_24 {right:140px;}
+.issue .certify_wrap > .btn_wrap {margin-top:40px;}
+.issue .certify_wrap .form_wrap .txt_input + .txt_input {margin-top:32px;}
+.issue .cotn_acc {padding:0px;}
+.issue .cotn_acc .ctrl_area {margin-bottom:0px; height:auto;}
+.issue .cotn_acc .ctrl_area .ctrl_trg {background-color:transparent; left:32px; width:calc(100% - 32px);}
+
+
+/* ------------------------------ [ 상품검색 ] -------------------------------------------------------------------------------------------------------------------------- */
+
+/* setting */
+.pick_map_wrap {display:none;}
+.pick_map_wrap.active {display:block;}
+.pick_list_wrap.active {display:none;}
+.issue_srch .sub {/*padding-bottom:114px;*/padding-bottom:0;}
+.issue_srch .header_wrap .head_search.store {display:block; left:0; width:calc(100% - 64px); margin-right:64px;}
+
+.issue_srch .store_info .name_loc,
+.issue.max .store_info .name_loc {padding-right:36px;}
+
+/* 점포수량조회 */
+.pick_store_wrap .form_wrap {padding:20px 16px 0;}
+.prd_area {padding:16px 16px 0; display:flex; align-items:center;}
+.prd_area .img_wrap .img {background-color:#ffffff; display:flex; overflow:hidden; align-items:center; border:1px solid #eeeeee; border-radius:16px; box-sizing:border-box; position:relative; height:64px; width:64px;}
+.prd_area .img_wrap .img img {display:block; width:100%;}
+.prd_area .prd_wrap {margin-left:16px;}
+.prd_area .prd_wrap .name {font-size:18px; font-weight:bold;}
+.prd_area .prd_wrap .price {font-size:14px;}
+.prd_area .prd_wrap .price strong {font-size:16px;}
+.issue_srch .tab_menu_fix {padding-right:16px;}
+.issue_srch .pick_store_wrap .form_wrap.copn_prd_choice .form_select ~ .form_select{margin-top:8px;}
+
+.issue_srch .pick_store_wrap .info_area{padding:0 24px;margin-top:11px;}
+
+/* 검색결과 */
+.issue_srch .store_info .mty_qty {color:#8059EA;}
+
+/* 재고조회:지도영역 */
+.issue_srch .pick_map_wrap .map .store_info{bottom:calc(90px + env(safe-area-inset-bottom))}
+.issue_srch .pick_map_wrap .map {height:calc(100vh - 231px);}
+.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 323px);}
+
+
+/* *********************************************************************************************************************************************************************************************
+														[ 팝업 ]
+********************************************************************************************************************************************************************************************* */
+/* setting */
+.alert_pop .cotn strong {color:#37D243;}
+
+/* 리스트보기팝업 */
+.issue.max {padding-bottom:0 !important;}
+.issue.max .contents {padding-bottom:110px; height:100%; max-height:100%;}
+.issue.max .store_info .mty_qty {color:#8059EA;}

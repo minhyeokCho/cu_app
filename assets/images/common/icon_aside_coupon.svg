@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="그룹_60040" data-name="그룹 60040" transform="translate(1571 4817)">
+    <rect id="사각형_5846" data-name="사각형 5846" width="32" height="32" transform="translate(-1571 -4817)" fill="none"/>
+    <path id="Ticket" d="M18.667,24H26a2,2,0,0,0,2-2V17.571a2.709,2.709,0,0,1-1.886-.753,2.507,2.507,0,0,1,0-3.637A2.709,2.709,0,0,1,28,12.429V8a2,2,0,0,0-2-2H18.667m0,18H6a2,2,0,0,1-2-2V17.571a2.709,2.709,0,0,0,1.886-.753,2.507,2.507,0,0,0,0-3.637A2.709,2.709,0,0,0,4,12.429V8A2,2,0,0,1,6,6H18.667m0,18V6" transform="translate(-1571 -4816)" fill="none" stroke="#555" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

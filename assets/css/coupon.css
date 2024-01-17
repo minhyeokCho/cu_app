@@ -1,0 +1,204 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 구독쿠폰 메뉴 CSS ]
+********************************************************************************************************************************************************************************************* */
+
+/* ------------------------------ [ 구독쿠폰 상세 ] ------------------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.coupon.detail_prd .header_wrap .btn_area .home {display:block;}
+.coupon.detail_prd .label_store {margin-top:10px;}
+.coupon.detail_prd .msg_flag {margin-top:24px;}
+.coupon.detail_prd .msg_flag p {background-color:#fff; float:left; border:1px solid #E8E8E8; border-radius:18px; color:#666666; font-size:14px; font-weight:bold; line-height:34px; text-align:center; padding:0 16px; height:34px;}
+.coupon.detail_prd .msg_flag p ~ p {margin-left:4px;}
+
+/* 구독쿠폰안내 */
+.cp_info_wrap {padding:0 8px; margin-bottom:40px;}
+.cp_info_wrap .tit_btn_wrap {padding-bottom:8px;}
+.cp_info_wrap .sub_txt {padding-left:16px; font-size:14px; color:#666;}
+
+/* ------------------------------ [ 구독쿠폰 결제 ] ------------------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.coupon.payment .header_wrap .tit_back h1,
+.coupon.payment .header_wrap .btn_area .home {display:block;}
+.coupon.payment .header_wrap .icon_sprite_32.cart {display:none}
+
+/* 공통 */
+.payment .txt_input ~ .txt_input {margin-top:32px;}
+
+/* ==== 결제쿠폰정보, 프로모션코드입력 ==== */
+/* .payment .info_code .tit_18 {padding-bottom:6px;}
+.payment .info_code .cpn_price {display:flex;}
+.payment .info_code .cpn_price .price {padding-left:8px;} */
+
+.payment .code .btn_tip {padding-left:6px;}
+.payment .bt_inert span {color:#666666;}
+
+/* 결제쿠폰정보 */
+.payment .info_code .cp_wrap {padding:20px 16px 0; margin-bottom:40px;}
+
+/* 프로모션코드입력 */
+.payment .promo_code {overflow:hidden; margin-top:40px;}
+.payment .promo_code .cotn .form_select {margin-bottom:11px;}
+
+/* 구매내역 및 유의사항 */
+.py_notice .header_wrap .tit_back h1 {display:block;}
+.py_notice .noti_wrap {padding:20px 24px 0;}
+.py_notice .noti_wrap + .noti_wrap {padding:32px 24px 44px 24px;}
+.py_notice .noti_wrap p {font-size:14px; margin-top:11px;}
+.py_notice .noti_wrap ul li {font-size:14px; margin-top:6px;}
+
+/* ==== 포인트입력 ==== */
+.payment .cpn_point {overflow:hidden;}
+.payment .cpn_point .tit_20 {padding:0 8px 16px;}
+.payment .use_point .point_number {padding-right:8px;}
+.payment .cpn_point .info_area {margin-top:0;}
+.payment .cpn_point .info_area .tit_copy {padding:11px 7px 0;}
+
+/* ==== 결제수단저장 ==== */
+.payment .save_mthd {padding:0 8px;}
+
+/* ==== 정기결제수단 ==== */
+.payment .regular_cd .info_area {margin-top:16px;}
+.payment .regular_cd .info_area .tit_copy {padding:0 12px;}
+.payment .regular_cd .form_wrap {margin-top:32px;}
+.payment .regular_cd .input_period {display:flex;}
+.payment .regular_cd .input_period .input_set {flex:1;}
+.payment .regular_cd .input_period .input_set + .input_set {margin-left:7px;}
+.payment .regular_cd .input_period .input_set .msg {margin-top:0;}
+.payment .regular_cd .txt_input.btn_with .input_set .long input {padding-right:0;}
+
+/* ==== 구매내역/약관 동의 ==== */
+
+/* 결제금액툴팁 */
+.coupon.payment.pymnt_order .pymnt_amount {overflow:visible;}
+.coupon.payment.pymnt_order .pymnt_amount .tit_lr {position:relative; overflow:visible;}
+.coupon.payment.pymnt_order .pymnt_amount .tit_lr .tit_24 {display:flex; align-items:center;}
+.coupon.payment.pymnt_order .pymnt_amount .tit_lr .tit_24 .btn_tip {top:-2px; padding-left:6px;}
+.coupon.payment.pymnt_order .pymnt_amount .tit_24 .tooltip.active {margin:0 24px;}
+
+/* ------------------------------ [ 구독쿠폰 결제완료 ] ------------------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.coupon.payment_done .tit_back {padding-left:8px;}
+.coupon.payment_done .tit_back .go_back {display:none;}
+.coupon.payment_done .header_wrap .home {display:block;}
+.coupon.payment_done .header_wrap .icon_sprite_32.cart {display:none;}
+
+.payment_done {background-color:#f6f6f6;}
+.payment_done .sub {padding-bottom:0;}
+.payment_done .sub > section {background-color:#ffffff; padding:40px 0;}
+.payment_done .sub > section ~ section {margin-top:16px;}
+.payment_done .sub > section.use_cpn_point {padding-top:0;}
+.payment_done .sub > section.use_cpn_point .cp_wrap{padding:0 16px;}
+.payment_done .use_cpn_point .tit_24 {padding:20px 24px 11px;}
+.payment_done .coupon_info {padding:0 16px;}
+.payment_done .coupon_info .box_shape .cotn {padding:20px; border-radius:16px;}
+.payment_done .coupon_info .cpn_price {margin-top:6px; overflow:hidden;}
+.payment_done .coupon_info .cpn_price p {float:left;}
+.payment_done .coupon_info .cpn_price .cotn_label {margin-right:10px;}
+.payment_done .coupon_info .cpn_price .price {height:23px; font-size:14px; line-height:23px; box-sizing:border-box;}
+.payment_done .coupon_info .cpn_price .price strong {font-size:16px;}
+.payment_done .sub > section.use_cpn_pay {padding:40px 16px; box-sizing:border-box;}
+.payment_done .use_cpn_pay .box_shape {margin:16px 0 40px;}
+.payment_done .use_cpn_pay .pay_info {display:table; width:100%; overflow:hidden;}
+.payment_done .use_cpn_pay .pay_info ~ .pay_info {margin-top:4px;}
+.payment_done .use_cpn_pay .pay_info dt,
+.payment_done .use_cpn_pay .pay_info dd {display:table-cell; color:#666; font-size:13px; vertical-align:middle;}
+.payment_done .use_cpn_pay .pay_info dt {text-align:left;}
+.payment_done .use_cpn_pay .pay_info dd {text-align:right;}
+
+
+/* ------------------------------ [ 포인트입력 ] --------------------------------------------------------------------------------------------------------------------------- */
+.payment .sub .use_cpn_point {padding-top:0;}
+.payment .use_cpn_point .cotn_acc {margin-top:32px;}
+.payment .use_cpn_point .info_area {margin-top:11px;}
+
+/* ------------------------------ [ 결제수단 선택 ] ------------------------------------------------------------------------------------------------------------------------- */
+.pymt_method {overflow:hidden;}
+.pymt_method .chose_mthd {overflow:hidden;}
+.pymt_method .chose_mthd .btn_wrap {flex-wrap:wrap; margin:-11px 0 0 -5px;}
+.pymt_method .chose_mthd .btn_wrap .btn {font-size:16px; flex:none; margin:11px 0 0 5px; width:calc(33.3% - 5px);}
+
+/* ------------------------------ [ 구독쿠폰 목록 ] ------------------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.coupon .header_wrap .tit_back h1,
+.coupon .header_wrap .icon_sprite_32.cart {display:block;}
+
+/* 쿠폰목록 */
+.coupon .nav_wrap {padding:0 16px;}
+.coupon .tit_wrap {display:flex; justify-content:space-between; margin:16px 16px; position:relative; padding:20px 20px;}
+.coupon .tit_wrap .tit_sub {color:#666666; font-size:14px;}
+.coupon .tit_wrap .btn_under,.btn_under:link{color:#666;font-weight:bold;text-decoration:underline;font-size:14px;}
+/* .cp_wrap {padding:0 16px;} */
+.coupon .cp_wrap .coupon_list{padding-top:0;}
+/* .cp_wrap .cp_set {margin-bottom:16px;} */
+.cp_set .top_cnt.soldout .img_area .dim_txt{display:block;position:absolute; top:50%; left:50%; width:100%; transform:translate(-50%, -50%); color:#ffffff; font-size:14px; font-weight:bold;letter-spacing:-0.64px; z-index:2;text-align:center;line-height:18px;}
+.cp_cnt .top_cnt.soldout .img_area:before {background-color:rgba(0,0,0,0.4); content:'';  border-radius:10px; position:absolute; left:0; top:0; height:100%; width:100%; z-index:1;}
+/* 쿠폰품절 */
+.cp_set.soldout .cp_box {background:#f6f6f6;}
+.cp_set.soldout .cp_cnt:before {background-color:#f6f6f6;}
+.cp_set.soldout .cp_cnt:after {background-color:#f6f6f6;}
+.cp_set.soldout .cp_cnt .prd_set .img_info_wrap .img:after {content:'SOLD OUT'; position:absolute; top:0; left:0; width:100%; height:100%; margin:0 auto; color:#fff; font-weight:bold; line-height:100px; text-align:center; background-color:rgba(0,0,0,0.4); z-index:1;}
+.cp_set.soldout .cp_cnt .prd_info_wrap p {color:#ddd;}
+
+/* 쿠폰정보 */
+.icon_cp_info {display:inline-block; width:16px; height:16px; vertical-align:middle;}
+.icon_cp_info.category {background:url(../images/common/icon_category_16x16.png) no-repeat 0 0; background-size:16px 16px;}
+.icon_cp_info.term {background:url(../images/common/icon_term_16x16.png) no-repeat 0 0; background-size:16px 16px;}
+.icon_cp_info.use {background:url(../images/common/icon_use_16x16.png) no-repeat 0 0; background-size:16px 16px;}
+.icon_cp_info.pay {background:url(../images/common/icon_pay_16x16.png) no-repeat 0 0; background-size:16px 16px;}
+.icon_cp_info.pay_meth {background:url(../images/common/icon_pay_meth_16x16.png) no-repeat 0 0; background-size:16px 16px;}
+
+/* *********************************************************************************************************************************************************************************************
+														[ 레이어팝업 ]
+********************************************************************************************************************************************************************************************* */
+/* ------------------------------ [ 구독쿠폰 안내 ] ------------------------------------------------------------------------------------------------------------------------- */
+.subs_coupon {}
+.subs_coupon .cp_detail {padding:20px 16px 0;}
+.subs_coupon .cp_detail .logo {display:flex; flex-direction:column; align-items:center;}
+.subs_coupon .cp_detail .logo .logo_img {margin:0 70px;}
+.subs_coupon .cp_detail .logo .logo_txt {padding-top:16px;}
+.subs_coupon .cp_detail img {display:block; width:100%; height:100%;}
+.subs_coupon .cp_detail .box_bg {padding:37px 20px 24px; border-radius:16px; background-color:#f6efdf; box-sizing:border-box;}
+.subs_coupon .cp_detail .box_bg .info_area {margin-top:16px; padding:0;}
+.subs_coupon .cp_detail .box_bg_wh {margin-top:20px; padding:16px 11px 16px 20px; border-radius:16px; box-sizing:border-box; background-color:#fff;}
+.subs_coupon .cp_detail .box_bg_wh .real_sale {color:#222;}
+.subs_coupon .cp_benefit {padding-top:32px;}
+.subs_coupon .tit_20 {text-indent:8px; margin-bottom:20px;}
+.subs_coupon .box_gray {padding:16px; border:2px solid #eee; border-radius:16px;}
+.subs_coupon .box_gray .cp_sale {display:flex; justify-content:space-between; align-items:center;}
+.subs_coupon .box_gray .cp_sale ~ .cp_sale {margin-top:16px;}
+.subs_coupon .box_gray .cp_sale .icon_wrap {width:80px; height:80px; border-radius:16px; background-color:#f6f6f6;}
+.subs_coupon .box_gray .cp_sale .icon_wrap > i {margin:20px auto;}
+.subs_coupon .box_gray .cp_sale .icon_wrap .icon_subs_cp {background:url(../images/common/icon_store.png) 0 0 no-repeat; background-size:40px 40px; display:block; width:40px; height:40px;}
+.subs_coupon .box_gray .cp_sale .icon_wrap .icon_benefit {display:block; width:40px; height:40px;}
+.subs_coupon .box_gray .cp_sale .icon_wrap .icon_benefit.skt {background:url(../images/common/icon_skt_40x40.png) 0 0 no-repeat; background-size:40px 40px;}
+.subs_coupon .box_gray .cp_sale .icon_wrap .icon_benefit.cu {background:url(../images/common/icon_cu_40x40.png) 0 0 no-repeat; background-size:40px 40px;}
+.subs_coupon .box_gray .cp_sale .txt_wrap {width:calc(100% - 96px);}
+.subs_coupon .sub_txt {margin-top:8px; color:#666; font-size:14px; padding-left:6px;}
+.subs_coupon .cp_benefit .info_area {margin-top:8px; padding:0;}
+.subs_coupon .pay_opt {padding:0 16px;}
+.subs_coupon .cp_set {padding:0 16px;}
+.subs_coupon .cp_set ol {display:flex; flex-wrap:wrap; margin-top:16px;}
+.subs_coupon .cp_set ol li {flex:none; width:calc(50% - 5.5px);}
+.subs_coupon .cp_set ol li .step {width:100%;}
+.subs_coupon .cp_set ol li img {max-width:100%;}
+.subs_coupon .cp_set ol li:nth-child(even) {margin-left:11px;}
+.subs_coupon .cp_set ol li:nth-child(n+3) {margin-top:24px;}
+.subs_coupon .cp_set ol li .tit_18,
+.subs_coupon .cp_set ol li .sub_txt {padding:0 8px;}
+.subs_coupon .cp_set ol li .tit_18 {margin-top:11px;}
+.subs_coupon .cp_set ol li .sub_txt {margin-top:4px; word-break:keep-all;}
+.subs_coupon .info_area {padding:0 24px 40px;}
+.subs_coupon .info_area li ~ li {margin-top:8px;}
+.subs_coupon .btn_wrap {padding:0 16px 44px;}
+
+/* ------------------------------ [ 구독쿠폰 결제방식 ] ------------------------------------------------------------------------------------------------------------------------- */
+.pymt_way {}
+.pymt_way .btm_btn_wrap .box_btm_btn {height:auto; padding:20px 16px; box-sizing:border-box;}
+.pymt_way .btm_btn_txt {text-align:center;}
+.pymt_way .total {display:flex; justify-content:space-between; align-items:center; padding:2px 8px 16px;}
+.pymt_way .total .price strong {margin-right:2px; font-family:robo; font-size:20px;}
+
+
+

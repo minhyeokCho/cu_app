@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <g id="그룹_60087" data-name="그룹 60087" transform="translate(-272.001 -143)">
+    <rect id="사각형_5832" data-name="사각형 5832" width="21" height="21" transform="translate(272.001 143)" fill="none" opacity="0.32"/>
+    <g id="그룹_22342" data-name="그룹 22342" transform="translate(273.029 143.561)">
+      <path id="패스_18669" data-name="패스 18669" d="M644.371,694.361l2.371,2.02a.57.57,0,0,0,.325.135l3.105.248a.572.572,0,0,1,.525.525l.248,3.105a.578.578,0,0,0,.135.326l2.021,2.371a.574.574,0,0,1,0,.742l-2.021,2.371a.578.578,0,0,0-.135.326l-.248,3.105a.572.572,0,0,1-.525.525l-3.105.248a.571.571,0,0,0-.325.135l-2.371,2.02a.571.571,0,0,1-.742,0l-2.371-2.02a.573.573,0,0,0-.326-.135l-3.105-.248a.572.572,0,0,1-.524-.525l-.248-3.105a.573.573,0,0,0-.135-.326l-2.02-2.371a.572.572,0,0,1,0-.742l2.02-2.371a.573.573,0,0,0,.135-.326l.248-3.105a.572.572,0,0,1,.524-.525l3.105-.248a.572.572,0,0,0,.326-.135l2.371-2.02A.571.571,0,0,1,644.371,694.361Z" transform="translate(-634.763 -694.224)" fill="#6e4cdf"/>
+      <g id="그룹_22341" data-name="그룹 22341" transform="translate(5.648 5.743)">
+        <line id="선_402" data-name="선 402" y1="6.081" x2="6" transform="translate(0.612 0.475)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <circle id="타원_1050" data-name="타원 1050" cx="1.302" cy="1.302" r="1.302" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <circle id="타원_1051" data-name="타원 1051" cx="1.302" cy="1.302" r="1.302" transform="translate(4.574 4.384)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

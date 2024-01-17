@@ -1,0 +1,84 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 회원가입 ]
+********************************************************************************************************************************************************************************************* */
+
+/* ------------------------------ [ 회원가입 14세이상 ] ---------------------------------------------------------------------------------------------------------------------------- */
+/* 약관동의 */
+.enjoy .tit_back .tit_18 {display:block;}
+.enjoy .agree_wrap {background-color:#f6f6f6;}
+.enjoy .agree_wrap .btn_wrap.bt_enjoy {margin-top:40px;}
+.enjoy .agree_wrap > section {background-color:#fff;}
+.enjoy .sub_tit {padding:20px 24px 0;}
+.enjoy .sub_tit ~ .sub_tit {padding-top:40px;}
+.enjoy .sub_tit ~ .sub_tit .tit_wrap {padding-bottom:8px;}
+.enjoy .sub_tit .tit_wrap {display:flex; justify-content:space-between; align-items:center; padding-bottom:24px;}
+.enjoy .sub_tit .tit_24 {padding:0;}
+.enjoy .sub_tit .step_list {overflow:hidden;}
+.enjoy .sub_tit .step_list li {float:left;}
+.enjoy .sub_tit .step_list li + li {margin-left:6px;}
+.enjoy .sub_tit .step_list_under li + li {margin-left:4px;}
+.enjoy .sub_tit .step_list li .num {display:inline-block; width:20px; height:20px; border-radius:50%; font-family:robo; color:#666; font-size:13px; font-weight:bold; text-align:center; background-color:#F6F6F6;border:1px solid #e8e8e8;box-sizing:border-box;line-height:18px;}
+.enjoy .sub_tit .step_list li.active .num {color:#fff; background-color:#666666;border:1px solid #666}
+.agree_list .input_chk.chk_all {padding:8px 24px 16px;}
+.agree_list + .btn_wrap {padding:40px 16px 0; background-color:#fff;}
+.enjoy .agent_agree_list {padding-top:24px;}
+.enjoy .agent_agree_list_top {padding-bottom:40px;}
+.enjoy .agent_agree_list .list_ui li:first-child {border-top:none;}
+.agree_list .list_ui li:last-child {border-bottom:none; padding-bottom:0;}
+.enjoy .plcy_wrap .ctrl_trg {left:32px; width:calc(100% - 32px);}
+.enjoy .cotn_acc {padding:0px;}
+.enjoy .cotn_acc .ctrl_area {margin-bottom:0px; height:auto;}
+.enjoy .cotn_acc .ctrl_area .ctrl_trg {background-color:transparent;}
+
+/* 본인인증 */
+.enjoy .certify_wrap {padding:8px 16px 40px;}
+.enjoy .certify_wrap.tp_16 {padding-top:40px;}
+.enjoy .certify_wrap .form_wrap  + .form_wrap {margin-top:32px;}
+.enjoy .certify_wrap .txt_input.frm_with.chk_wrn .form_txt input {padding-right:170px;}
+.enjoy .certify_wrap .txt_input.frm_with.chk_wrn .msg .icon_sprite_24 {right:140px;}
+.enjoy .certify_wrap .btn_wrap.bt_enjoy {margin-top:40px;}
+.enjoy .certify_wrap .form_wrap .txt_input + .txt_input {margin-top:32px;}
+.enjoy .certify_wrap .form_wrap .info_area {margin-top:11px;}
+.enjoy .certify_wrap .form_wrap .info_area.i_none {padding-left:8px;}
+.enjoy .certify_wrap .plcy_wrap {margin-top:32px;}
+.enjoy .noti_wrap {padding:40px 16px 0;}
+.enjoy .noti_wrap .link_txt {color:#222222; text-decoration:underline;}
+.enjoy .agent_noti_wrap {padding:0px 24px 24px;}
+.enjoy .agent_noti_wrap .info_area {margin-top:16px;}
+
+/* 정보입력 */
+.enjoy .sub_tit .dlwrap {padding-bottom:40px;}
+.enjoy .dltbl {display:flex; align-items:center;}
+.enjoy .dltbl + .dltbl {margin-top:8px;}
+.enjoy .dltbl dt,
+.enjoy .dltbl dd {display:inline-flex; align-items:center; font-size:14px;}
+.enjoy .dltbl dt {width:76px;}
+.enjoy .dltbl dd {width:calc(100% - 76px);}
+
+
+/* *********************************************************************************************************************************************************************************************
+														[ 레이어팝업 ]
+********************************************************************************************************************************************************************************************* */
+/* 기가입완료 */
+.enjoy .alert_pop.align_mid.cur_join .dltbl {margin:0 30px;}
+.enjoy .alert_pop.align_mid.cur_join .dltbl dt,
+.enjoy .alert_pop.align_mid.cur_join .dltbl dd {font-size:20px; font-weight:bold; letter-spacing:-0.6px; line-height: 1.3em; text-align:center;}
+.enjoy .alert_pop.align_mid.cur_join .dltbl dt {width:65px;}
+.enjoy .alert_pop.align_mid.cur_join .dltbl dd {width:calc(100% - 65px);}
+
+/* 가입완료 */
+.enjoy .btm_finish .head {height:auto; padding:28px 24px 20px;}
+.enjoy .btm_finish .contents .grad_bgp {padding:16px 0; height:80px; border-radius:18px; box-sizing:border-box; background-color:#8059EA;}
+.enjoy .btm_finish .contents .grad_bgp .dltbl {display:inherit; width:50%; margin: 0 auto;}
+.enjoy .btm_finish .contents .grad_bgp .dltbl dt,
+.enjoy .btm_finish .contents .grad_bgp .dltbl dd {justify-content:center; width:100%; color:#fff; font-weight:bold;}
+.enjoy .btm_finish .contents .grad_bgp .dltbl dt {font-size:13px; letter-spacing:-0.2px;}
+.enjoy .btm_finish .contents .grad_bgp .dltbl dd span {font-family:robo; font-size:24px; line-height:1.25em;}
+.enjoy .btm_finish .contents .grad_bgp + .ben_wrap {margin-top:20px;}
+
+.enjoy .btm_popup[class*="max"] .head + .contents {height:calc(100% - 98px); padding-bottom:110px;}
+.benefit_wrap .box_area ~ .box_area {margin-top:11px;}
+.benefit_wrap .box_area .img_area {position:relative; width:100%; border-radius:24px; box-sizing:border-box; overflow:hidden;}
+.benefit_wrap .box_area .img_area img {display:block; width:100%;}

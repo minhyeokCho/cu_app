@@ -1,0 +1,90 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 로그인 ]
+********************************************************************************************************************************************************************************************* */
+
+/* setting */
+.login .header_wrap .btn_area .btn_menu.home{display:block;}
+
+/* ------------------------------ [ 로그인 ] ---------------------------------------------------------------------------------------------------------------------------- */
+.login .tit_back .tit_18 {display:block;}
+.login .login_form {padding:0 24px;}
+.login .login_form .logo {margin:11px auto 0; text-align:center; height:62px; width:100px;}
+.login .login_form .logo img {width:100%; height:100%;}
+.login .login_set {margin-top:40px;}
+.login .login_set .txt_input  + .txt_input {margin-top:32px;}
+.login .login_set .input_chk {margin-top:11px;}
+.login .login_set .btn_wrap {margin-top:32px;}
+.login .login_set .login_search {display:flex; justify-content:space-between;  margin-top:16px;}
+.login .login_set .login_search a {color:#666; font-size:14px;}
+.login .login_easy {margin-top:11px;}
+.login .login_easy .tit_13 {position:relative; height:16px; color:#666; font-size:13px; font-weight:bold; text-align:center; z-index:1;}
+.login .login_easy .tit_13  span {display:inline-block; padding:0 20px; background-color: #fff;}
+.login .login_easy .tit_13:before  {content:''; position:absolute; top:50%; left:0; transform:translateY(-50%); width:100%; height:1px; background-color:#ccc; z-index:-1;}
+.login .login_easy ul li {height:40px; width:100%; position:relative; border-radius:24px;}
+.login .login_easy ul li ~ li {margin-top:8px;}
+.login .login_easy ul li.naver {background-color:#00C73C;}
+.login .login_easy ul li.kakao {background-color:#FAE100;}
+.login .login_easy ul li.apple {background-color:#666;}
+.login .login_easy ul li a {height:100%; width:100%; box-sizing:border-box;}
+.login .login_easy ul li .login_easy_info {display:flex; align-items:center;width:230px; margin:0 auto; text-align:left;}
+.login .login_easy ul li .icon {display:block; height:40px; width:40px;}
+.login .login_easy ul li.naver .icon {background:url(../images/login/icon_naver.png) no-repeat center; background-size:40px 40px;}
+.login .login_easy ul li.kakao .icon {background:url(../images/login/icon_kakao.png) no-repeat center; background-size:40px 40px;}
+.login .login_easy ul li.apple .icon {background:url(../images/login/icon_apple.png) no-repeat center; background-size:40px 40px;}
+.login .login_easy ul li span {display:block; margin-left:4px; color:#FFFFFF; font-size:14px; font-weight:bold;}
+.login .login_easy ul li.kakao span {color:#381E1F;}
+.login_tel{font-size:14px;color:#666;margin-top:32px;}
+.login_tel a{font-weight:bold;padding-left:8px;font-family:robo;}
+.login_banner{display:flex;align-items:center;padding-left:24px;}
+.login_banner img{width:72px;}
+.txt_log01{color:#666;font-size:13px;}
+.txt_log02{font-size:13px;font-weight:bold;}
+
+/* ------------------------------ [ 아이디/비밀번호찾기 ] ---------------------------------------------------------------------------------------------------------------------------- */
+/* 본인인증 */
+.login .certify_info {margin-top:21px; padding:0 16px;}
+.login .certify_info .form_wrap ~ .form_wrap {margin-top:32px;}
+.login .certify_info .txt_input.frm_with.chk_wrn .form_txt input {padding-right:170px;}
+.login .certify_info .txt_input.frm_with.chk_wrn .msg .icon_sprite_24 {right:140px;}
+.login .certify_info .form_wrap + .btn_wrap {margin-top:40px;}
+.login .plcy_wrap .ctrl_trg {left:32px; width:calc(100% - 32px);}
+.login .certify_info .cotn_acc {padding:0px;}
+.login .certify_info .cotn_acc .ctrl_area {margin-bottom:0px; height:auto;}
+.login .certify_info .cotn_acc .ctrl_area .ctrl_trg {background-color:transparent;}
+.login .info_area_wrap {background-color:#F6F6F6; margin-top:40px; padding-top:16px;}
+.login .info_area_wrap .info_area {padding:40px 24px 0; background-color:#fff;}
+.login .info_area_wrap .info_area .link_txt {color:#222222; text-decoration:underline;}
+
+/* 비밀번호재설정 */
+.login .pw_reset {padding:0 16px;}
+.login .pw_reset .form_wrap {margin-top:21px;}
+.login .pw_reset .form_wrap .txt_input + .txt_input {margin-top:32px;}
+.login .pw_reset .form_wrap .btn_wrap {margin-top:40px;}
+
+/* 아이디비번찾기 결과 */
+.login.result .sub {padding: 0 16px 0;}
+.login.result .btn_wrap {margin-top:32px;}
+.login.result .btn_wrap .btn:first-child {padding:0 30px;}
+
+/* 아이디비번찾기 결과없음 */
+.login .result_nodata .data_none .mn_copy {font-size:24px; font-weight:bold;}
+.login .result_nodata .data_none .sb_copy {margin-top:16px; font-size:16px;}
+.login .result_info .mn_copy {font-size:30px;}
+.login .result_info .mn_copy ~ .sb_copy {font-size:18px;}
+
+/* 비밀번호 변경 안내 */
+.pw_info_pop .pw_reset .form_wrap{margin-top:21px;}
+.pw_info_pop .pw_reset{padding: 0 16px 0;}
+
+/* ------------------------------ [ 휴면회원 ] ---------------------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.login.dormant .header_wrap .btn_area .btn_menu.home{display:none;}
+
+
+/* *********************************************************************************************************************************************************************************************
+														[ 레이어팝업 ]
+********************************************************************************************************************************************************************************************* */
+/* 로그인정보 오류일 경우 경고창 */
+.login .alert_pop.align_mid .sub_txt {display:block; margin-top:16px; font-size:16px; text-align:center;}

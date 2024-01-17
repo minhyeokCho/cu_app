@@ -1,0 +1,832 @@
+@charset 'utf-8';
+
+/* body:before{content:''; position:fixed; left:83px; right:83px; top:0; height:30px; background-color:#000; border-radius:0 0 20px 20px; z-index:99999;}
+body:after{content:''; background-color:#000; border-radius:30px; position:fixed; left:0; right:0; bottom:8px; margin:0 auto; height:5px; width:134px; z-index:99999;} */
+
+/* ------------------------------ [ iPhone 6 / 7 / 8 ] --------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (width:375px) and (height:667px) {
+	#header {padding-top:20px;}
+	#container {padding-top:76px;}
+
+	/* 헤더:검색 */
+	.header_wrap .head_search {top:20px;}
+
+	/* ---- [ QR코드 class="qr_code" ] ---- */
+	.ui_qr_code .head {padding-top:20px !important; height:76px !important;}
+
+	/* ---- [ 점포검색 ] ---- */
+	/* 내주변 */
+	.around .map {height:calc(100vh - 194px) !important;}
+
+	/* ---- 점포 메인 ---- */
+	/* .store.main .sub .sub_tit {top:77px}
+	.store.main .up_layer_area{height:calc(100vh - 109px);} */
+
+	/* ---- [ 상품상세 ] ---- */
+	/* 점포재고수량조회:지도형 */
+	.product.inven_qty .pick_map_wrap .map{height:calc(100vh - 142px) !important;}
+
+	/* 탭메뉴 */
+	.detail_prd .tab_depth1 {top:75px;}
+
+	/* ---- [ 데이터결과 ] ---- */
+	.result_info.h_100 {height:calc(100vh - 116px);}
+
+	/* 1:1문의작성완료 */
+	.customer.qna .ad_info_wrap {height:calc(100vh - 228px) !important;}
+
+	/* ---- [ 상품재고조회 ] ---- */
+	/* 재고조회:지도영역 */
+	.inven_search .pick_map_wrap .map {height:calc(100vh - 251px) !important}
+	.inven_search .pick_map_wrap.prd_on .map{height:calc(100vh - 333px) !important}
+	/* 상품검색결과 */
+	.inven_search .result .prd_li{max-height:calc(100vh - 194px) !important;}
+
+	/* ---- [ 핫이슈상품 ] ---- */
+	/* 재고조회:지도영역 */
+	.issue_srch .pick_map_wrap .map {height:calc(100vh - 251px) !important}
+	.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 333px) !important}
+
+	/* 상품목록(검색) */
+	.product.product_list .top_prd_area{top:76px !important}
+
+	/* --- [MYCU 쿠폰함] --- */
+	/* 재고조회:지도영역 */
+	.cp_srch .pick_map_wrap .map{height:calc(100vh - 288px) !important;}
+
+
+	/* ------------------------------------------------------------ [ 전체팝업 ] ------------------------------------------------------------ */
+	.full_popup .head {padding:38px 16px 17px 24px; height:76px;}
+	.full_popup .head .closed {top:32px; margin-top:0;}
+	.full_popup .contents {max-height:calc(100vh - 156px);}
+	.no_foot_full_pop .contents {max-height:calc(100vh - 116px);}
+	.data_none.h_100 {height:calc(100vh - 116px);}
+
+	/* ---- [ 점포 ] ---- */
+	/* 메인:위치:지도 */
+	.store_loc .map {height:calc(100% - 76px) !important}
+
+	/* ---- [ 주문/결제 쿠폰 ] ---- */
+	.full_popup.order_cp_01 .contents,
+	.full_popup.order_cp_02 .contents {max-height:calc(100% - 243px);}
+	.full_popup.order_cp_03 .contents {max-height:calc(100% - 213px);}
+
+	/* ---- [ 픽업 ] ---- */
+	/* 지도형 */
+	.pick_store .pick_map_wrap .map {height:calc(100vh - 226px) !important;}
+}
+
+/* ------------------------------ [ 6 Plus / 6s Plus / 7 Plus ] ------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (device-width:476px) and (device-height:847px) {
+	#header {padding-top:20px;}
+	#container {padding-top:76px;}
+
+	/* 헤더:검색 */
+	.header_wrap .head_search {top:20px;}
+
+	/* ---- [ QR코드 class="qr_code" ] ---- */
+	.ui_qr_code .head {padding-top:20px !important; height:76px !important;}
+
+	/* ---- [ 점포검색 ] ---- */
+	/* 내주변 */
+	.around .map {height:calc(100vh - 194px) !important;}
+
+	/* ---- 점포 메인 ---- */
+	/* .store.main .sub .sub_tit {top:77px}
+	.store.main .up_layer_area{height:calc(100vh - 109px);} */
+
+	/* ---- [ 상품상세 ] ---- */
+	/* 점포재고수량조회:지도형 */
+	.product.inven_qty .pick_map_wrap .map{height:calc(100vh - 142px) !important;}
+
+	/* 탭메뉴 */
+	.detail_prd .tab_depth1 {top:75px;}
+
+	/* ---- [ 데이터결과 ] ---- */
+	.result_info.h_100 {height:calc(100vh - 116px);}
+
+	/* 1:1문의작성완료 */
+	.customer.qna .ad_info_wrap {height:calc(100vh - 228px) !important;}
+
+	/* ---- [ 상품재고조회 ] ---- */
+	/* 재고조회:지도영역 */
+	.inven_search .pick_map_wrap .map {height:calc(100vh - 251px) !important}
+	.inven_search .pick_map_wrap.prd_on .map{height:calc(100vh - 333px) !important}
+	/* 상품검색결과 */
+	.inven_search .result .prd_li{max-height:calc(100vh - 194px) !important;}
+
+	/* ---- [ 핫이슈상품 ] ---- */
+	/* 재고조회:지도영역 */
+	.issue_srch .pick_map_wrap .map {height:calc(100vh - 251px) !important}
+	.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 333px) !important}
+
+	/* 상품목록(검색) */
+	.product.product_list .top_prd_area{top:76px !important}
+
+	/* --- [MYCU 쿠폰함] --- */
+	/* 재고조회:지도영역 */
+	.cp_srch .pick_map_wrap .map{height:calc(100vh - 288px) !important;}
+
+	/* ------------------------------------------------------------ [ 전체팝업 ] ------------------------------------------------------------ */
+	.full_popup .head {padding:38px 16px 17px 24px; height:76px;}
+	.full_popup .head .closed {top:32px; margin-top:0;}
+	.full_popup .contents {max-height:calc(100vh - 156px);}
+	.no_foot_full_pop .contents {max-height:calc(100vh - 116px);}
+	.data_none.h_100 {height:calc(100vh - 116px);}
+
+	/* ---- [ 점포 ] ---- */
+	/* 메인:위치:지도 */
+	.store_loc .map {height:calc(100% - 76px) !important}
+
+	/* ---- [ 주문/결제 쿠폰 ] ---- */
+	.full_popup.order_cp_01 .contents,
+	.full_popup.order_cp_02 .contents {max-height:calc(100% - 243px);}
+	.full_popup.order_cp_03 .contents {max-height:calc(100% - 213px);}
+
+	/* ---- [ 픽업 ] ---- */
+	/* 지도형 */
+	.pick_store .pick_map_wrap .map {height:calc(100vh - 226px) !important;}
+}
+
+/* ------------------------------ [ 8 Plus ] ---------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (width:414px) and (height:736px) {
+	#header {padding-top:20px;}
+	#container {padding-top:76px;}
+
+	/* 헤더:검색 */
+	.header_wrap .head_search {top:20px;}
+
+	/* ---- [ QR코드 class="qr_code" ] ---- */
+	.ui_qr_code .head {padding-top:20px !important; height:76px !important;}
+
+	/* ---- [ 점포검색 ] ---- */
+	/* 내주변 */
+	.around .map {height:calc(100vh - 194px) !important;}
+
+	/* ---- 점포 메인 ---- */
+	/* .store.main .sub .sub_tit {top:77px}
+	.store.main .up_layer_area{height:calc(100vh - 109px);} */
+
+	/* ---- [ 상품상세 ] ---- */
+	/* 점포재고수량조회:지도형 */
+	.product.inven_qty .pick_map_wrap .map{height:calc(100vh - 142px) !important;}
+
+	/* 탭메뉴 */
+	.detail_prd .tab_depth1 {top:75px;}
+
+	/* ---- [ 데이터결과 ] ---- */
+	.result_info.h_100 {height:calc(100vh - 116px);}
+
+	/* 1:1문의작성완료 */
+	.customer.qna .ad_info_wrap {height:calc(100vh - 228px) !important;}
+
+	/* ---- [ 상품재고조회 ] ---- */
+	/* 재고조회:지도영역 */
+	.inven_search .pick_map_wrap .map {height:calc(100vh - 251px) !important}
+	.inven_search .pick_map_wrap.prd_on .map{height:calc(100vh - 333px) !important}
+	/* 상품검색결과 */
+	.inven_search .result .prd_li{max-height:calc(100vh - 194px) !important;}
+
+	/* ---- [ 핫이슈상품 ] ---- */
+	/* 재고조회:지도영역 */
+	.issue_srch .pick_map_wrap .map {height:calc(100vh - 251px) !important}
+	.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 333px) !important}
+
+	/* --- [MYCU 쿠폰함] --- */
+	/* 재고조회:지도영역 */
+	.cp_srch .pick_map_wrap .map{height:calc(100vh - 288px) !important;}
+
+
+	/* ------------------------------------------------------------ [ 전체팝업 ] ------------------------------------------------------------ */
+	.full_popup .head {padding:38px 16px 17px 24px; height:76px;}
+	.full_popup .head .closed {top:32px; margin-top:0;}
+	.full_popup .contents {max-height:calc(100vh - 156px);}
+	.no_foot_full_pop .contents {max-height:calc(100vh - 116px);}
+	.data_none.h_100 {height:calc(100% - 76px);}
+
+	/* ---- [ 점포 ] ---- */
+	/* 메인:위치:지도 */
+	.store_loc .map {height:calc(100% - 76px) !important}
+
+	/* ---- [ 주문/결제 쿠폰 ] ---- */
+	.full_popup.order_cp_01 .contents,
+	.full_popup.order_cp_02 .contents {max-height:calc(100% - 243px);}
+	.full_popup.order_cp_03 .contents {max-height:calc(100% - 213px);}
+
+	/* ---- [ 픽업 ] ---- */
+	/* 지도형 */
+	.pick_store .pick_map_wrap .map {height:calc(100vh - 226px) !important;}
+
+	/* 상품목록(검색) */
+	.product.product_list .top_prd_area{top:76px !important}
+
+}
+
+/* ------------------------------ [ X / 11 Pro / 12 mini ] -------------------------------------------------------------------------------------------------- */
+@media only screen and (width:375px) and (height:812px) {
+	/* 아이폰X 이후 기기 safe area top 영역 44px로 설정 */
+
+	#header {padding-top:44px;}
+	#container {padding-top:100px;}
+	.btn_fixed {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.tap_bar .cotn{padding:0 0 34px;}
+	#footer {padding-bottom:44px;}
+	.foot_pad #footer {padding-bottom:109px;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+	/* .foot_pad #footer.open {padding-bottom:44px;} */
+	/* 장바구니:배달(버튼+문구) */
+	.order.cart.foot_pad #footer,
+	.order.pymnt_order.foot_pad #footer{padding-bottom:139px !important;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+
+	/* 헤더:검색 */
+	.header_wrap .head_search {top:44px;}
+
+	/* ---- 메인 ---- */
+	/* 메인하단 - 효과 */
+	.upto .main_area.fix .tab_menu {padding-top:52px !important;}
+	.upto .sub_top.hide + .up_area #tab1:before {background-color:#fff; content:""; opacity:1; position:fixed; left:0; top:0; height:44px; width:100%; z-index:9999;}
+
+	/* 핫이슈상품:단골점포 */
+	.issue .btn_fixed {bottom:calc(50% + 44px) !important;}
+
+	/* 점포검색:내주변 */
+	.around .map .store_info {bottom:114px !important;}
+
+	/* ---- 픽업 점포:상품상세/장바구니 같이 사용 ---- */
+	/* 점포수량조회 목록-지도형 show-hide */
+	.pick_list_wrap {padding-bottom:180px !important;}
+
+	/* 지도형 */
+	.pick_store .pick_map_wrap .map {height:calc(100vh - 250px) !important;}
+
+	/* ---- 점포 메인 ---- */
+	/* .store.main .sub .sub_tit{top:101px} */
+	/* .store.main .up_layer_area{height:calc(100vh - 135px);} */
+
+	/* ---- [ QR코드 class="qr_code" ] ---- */
+	.ui_qr_code .head {padding-top:44px !important; height:100px !important;}
+
+	/* ---- [ 검색 ] ---- */
+	/* 내주변 */
+	.around .map {height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 상품상세 ] ---- */
+	/* 점포재고수량조회:지도형 */
+	.product.inven_qty .pick_map_wrap .map {height:calc(100vh - 166px) !important;}
+
+	/* 탭메뉴 */
+	.detail_prd .tab_depth1 {top:99px;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc .map {height:calc(100% - 100px) !important;}
+
+	/* ---- 장바구니 편PICK : 점포+재고조회 ---- */
+	.pick_store .pick_map_wrap .map .store_inven_wrap {bottom:114px !important;}
+	/* 상품상세 픽업점포선택:지도 */
+	.product.pick_store .pick_map_wrap .map .store_info{bottom:114px !important;}
+
+	/* ---- [ 바닥팝업 ] ---- */
+	.btm_popup {padding-bottom:44px !important;}
+
+	/* ---- [ 상품재고조회 ] ---- */
+	/* 재고조회:지도영역 */
+	.inven_search .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.inven_search .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.inven_search .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+	/* 상품검색결과 */
+	.inven_search .result .prd_li{max-height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 핫이슈상품 ] ---- */
+	/* 재고조회:지도영역 */
+	.issue_srch .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.issue_srch .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+
+	/* ---- [ MYCU:쿠폰함 ] ---- */
+	/* 재고조회:지도 */
+	.cp_srch .pick_map_wrap .map .store_info{bottom:114px !important}
+
+	/* ---- [ 데이터결과 ] ---- */
+	.result_info.h_100 {height:calc(100vh - 100px);}
+
+	/* 1:1문의작성완료 */
+	.customer.qna .ad_info_wrap {height:calc(100vh - 296px) !important;}
+
+	/* 상품목록(검색) */
+	.product.product_list .top_prd_area{top:100px !important}
+
+	/* --- [MYCU 쿠폰함] --- */
+	/* 재고조회:지도영역 */
+	.cp_srch .pick_map_wrap .map{height:calc(100vh - 312px) !important;}
+
+
+	/* ------------------------------------------------------------ [ 전체팝업 ] ------------------------------------------------------------ */
+	.full_popup {padding-top:44px;}
+	.full_popup .contents {max-height:calc(100vh - 214px);}
+	.no_foot_full_pop .contents {max-height:calc(100vh - 144px);}
+	.full_popup .foot {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.data_none.h_100 {height:calc(100vh - 100px) !important;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc.full_popup .map{height:calc(100% - 56px) !important;}
+
+	/* ---- [ 주문/결제 쿠폰 ] ---- */
+	.full_popup.order_cp_01 .contents,
+	.full_popup.order_cp_02 .contents {max-height:calc(100% - 257px);}
+	.full_popup.order_cp_03 .contents {max-height:calc(100% - 227px);}
+
+}
+
+/* ------------------------------ [ XS Max / 11 / 11 Pro Max ] ---------------------------------------------------------------------------------------------------------- */
+@media only screen and (width:414px) and (height:896px) {
+	/* 아이폰X 이후 기기 safe area top 영역 44px로 설정 */
+
+	#header {padding-top:44px;}
+	#container {padding-top:100px;}
+	.btn_fixed {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.tap_bar .cotn{padding:0 0 34px;}
+	#footer {padding-bottom:44px;}
+	.foot_pad #footer {padding-bottom:109px;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+	/* .foot_pad #footer.open {padding-bottom:44px;} */
+	/* 장바구니:배달(버튼+문구) */
+	.order.cart.foot_pad #footer,
+	.order.pymnt_order.foot_pad #footer{padding-bottom:139px !important;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+
+	/* 헤더:검색 */
+	.header_wrap .head_search {top:44px;}
+
+	/* ---- 메인 ---- */
+	/* 메인하단 - 효과 */
+	.upto .main_area.fix .tab_menu {padding-top:52px !important;}
+	.upto .sub_top.hide + .up_area #tab1:before {background-color:#fff; content:""; opacity:1; position:fixed; left:0; top:0; height:44px; width:100%; z-index:9999;}
+
+	/* 핫이슈상품:단골점포 */
+	.issue .btn_fixed {bottom:calc(50% + 44px) !important;}
+
+	/* 점포검색:내주변 */
+	.around .map .store_info {bottom:114px !important;}
+
+	/* ---- 픽업 점포:상품상세/장바구니 같이 사용 ---- */
+	/* 점포수량조회 목록-지도형 show-hide */
+	.pick_list_wrap {padding-bottom:180px !important;}
+
+	/* 지도형 */
+	.pick_store .pick_map_wrap .map {height:calc(100vh - 250px) !important;}
+
+	/* ---- 점포 메인 ---- */
+	/* .store.main .sub .sub_tit{top:101px}
+	.store.main .up_layer_area{height:calc(100vh - 135px);} */
+
+	/* ---- [ QR코드 class="qr_code" ] ---- */
+	.ui_qr_code .head {padding-top:44px !important; height:100px !important;}
+
+	/* ---- [ 검색 ] ---- */
+	/* 내주변 */
+	.around .map {height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 상품상세 ] ---- */
+	/* 점포재고수량조회:지도형 */
+	.product.inven_qty .pick_map_wrap .map {height:calc(100vh - 166px) !important;}
+
+	/* 탭메뉴 */
+	.detail_prd .tab_depth1 {top:99px;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc .map {height:calc(100% - 100px) !important;}
+
+	/* ---- 장바구니 편PICK : 점포+재고조회 ---- */
+	.pick_store .pick_map_wrap .map .store_inven_wrap {bottom:114px !important;}
+	/* 상품상세 픽업점포선택:지도 */
+	.product.pick_store .pick_map_wrap .map .store_info{bottom:114px !important;}
+
+	/* ---- [ 바닥팝업 ] ---- */
+	.btm_popup {padding-bottom:44px !important;}
+
+	/* ---- [ 상품재고조회 ] ---- */
+	/* 재고조회:지도영역 */
+	.inven_search .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.inven_search .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.inven_search .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+	/* 상품검색결과 */
+	.inven_search .result .prd_li{max-height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 핫이슈상품 ] ---- */
+	/* 재고조회:지도영역 */
+	.issue_srch .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.issue_srch .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+
+	/* ---- [ MYCU:쿠폰함 ] ---- */
+	/* 재고조회:지도 */
+	.cp_srch .pick_map_wrap .map .store_info{bottom:114px !important}
+
+	/* ---- [ 데이터결과 ] ---- */
+	.result_info.h_100 {height:calc(100vh - 100px);}
+
+	/* 1:1문의작성완료 */
+	.customer.qna .ad_info_wrap {height:calc(100vh - 296px) !important;}
+
+	/* 상품목록(검색) */
+	.product.product_list .top_prd_area{top:100px !important}
+
+	/* --- [MYCU 쿠폰함] --- */
+	/* 재고조회:지도영역 */
+	.cp_srch .pick_map_wrap .map{height:calc(100vh - 312px) !important;}
+
+
+	/* ------------------------------------------------------------ [ 전체팝업 ] ------------------------------------------------------------ */
+	.full_popup {padding-top:44px;}
+	.full_popup .contents {max-height:calc(100vh - 214px);}
+	.no_foot_full_pop .contents {max-height:calc(100vh - 144px);}
+	.full_popup .foot {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.data_none.h_100 {height:calc(100vh - 100px) !important;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc.full_popup .map{height:calc(100% - 56px) !important;}
+
+	/* ---- [ 주문/결제 쿠폰 ] ---- */
+	.full_popup.order_cp_01 .contents,
+	.full_popup.order_cp_02 .contents {max-height:calc(100% - 257px);}
+	.full_popup.order_cp_03 .contents {max-height:calc(100% - 227px);}
+}
+
+/* ------------------------------ [ 12 mini / 13 mini ] --------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (width:360px) and (height:780px) {
+	/* 아이폰X 이후 기기 safe area top 영역 44px로 설정 */
+
+	#header {padding-top:44px;}
+	#container {padding-top:100px;}
+	.btn_fixed {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.tap_bar .cotn{padding:0 0 34px;}
+	#footer {padding-bottom:44px;}
+	.foot_pad #footer {padding-bottom:109px;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+	/* .foot_pad #footer.open {padding-bottom:44px;} */
+	/* 장바구니:배달(버튼+문구) */
+	.order.cart.foot_pad #footer,
+	.order.pymnt_order.foot_pad #footer{padding-bottom:139px !important;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+
+	/* 헤더:검색 */
+	.header_wrap .head_search {top:44px;}
+
+	/* ---- 메인 ---- */
+	/* 메인하단 - 효과 */
+	.upto .main_area.fix .tab_menu {padding-top:52px !important;}
+	.upto .sub_top.hide + .up_area #tab1:before {background-color:#fff; content:""; opacity:1; position:fixed; left:0; top:0; height:44px; width:100%; z-index:9999;}
+
+	/* 핫이슈상품:단골점포 */
+	.issue .btn_fixed {bottom:calc(50% + 44px) !important;}
+
+	/* 점포검색:내주변 */
+	.around .map .store_info {bottom:114px !important;}
+
+	/* ---- 픽업 점포:상품상세/장바구니 같이 사용 ---- */
+	/* 점포수량조회 목록-지도형 show-hide */
+	.pick_list_wrap {padding-bottom:180px !important;}
+
+	/* 지도형 */
+	.pick_store .pick_map_wrap .map {height:calc(100vh - 250px) !important;}
+
+	/* ---- 점포 메인 ---- */
+	/* .store.main .sub .sub_tit{top:101px}
+	.store.main .up_layer_area{height:calc(100vh - 135px);} */
+
+	/* ---- [ QR코드 class="qr_code" ] ---- */
+	.ui_qr_code .head {padding-top:44px !important; height:100px !important;}
+
+	/* ---- [ 검색 ] ---- */
+	/* 내주변 */
+	.around .map {height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 상품상세 ] ---- */
+	/* 점포재고수량조회:지도형 */
+	.product.inven_qty .pick_map_wrap .map {height:calc(100vh - 166px) !important;}
+
+	/* 탭메뉴 */
+	.detail_prd .tab_depth1 {top:99px;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc .map {height:calc(100% - 100px) !important;}
+
+	/* ---- 장바구니 편PICK : 점포+재고조회 ---- */
+	.pick_store .pick_map_wrap .map .store_inven_wrap {bottom:114px !important;}
+	/* 상품상세 픽업점포선택:지도 */
+	.product.pick_store .pick_map_wrap .map .store_info{bottom:114px !important;}
+
+	/* ---- [ 바닥팝업 ] ---- */
+	.btm_popup {padding-bottom:44px !important;}
+
+	/* ---- [ 상품재고조회 ] ---- */
+	/* 재고조회:지도영역 */
+	.inven_search .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.inven_search .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.inven_search .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+	/* 상품검색결과 */
+	.inven_search .result .prd_li{max-height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 핫이슈상품 ] ---- */
+	/* 재고조회:지도영역 */
+	.issue_srch .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.issue_srch .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+
+	/* ---- [ MYCU:쿠폰함 ] ---- */
+	/* 재고조회:지도 */
+	.cp_srch .pick_map_wrap .map .store_info{bottom:114px !important}
+
+	/* ---- [ 데이터결과 ] ---- */
+	.result_info.h_100 {height:calc(100vh - 100px);}
+
+	/* 1:1문의작성완료 */
+	.customer.qna .ad_info_wrap {height:calc(100vh - 296px) !important;}
+
+	/* 상품목록(검색) */
+	.product.product_list .top_prd_area{top:100px !important}
+
+
+	/* --- [MYCU 쿠폰함] --- */
+	/* 재고조회:지도영역 */
+	.cp_srch .pick_map_wrap .map{height:calc(100vh - 312px) !important;}
+
+
+	/* ------------------------------------------------------------ [ 전체팝업 ] ------------------------------------------------------------ */
+	.full_popup {padding-top:44px;}
+	.full_popup .contents {max-height:calc(100vh - 214px);}
+	.no_foot_full_pop .contents {max-height:calc(100vh - 144px);}
+	.full_popup .foot {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.data_none.h_100 {height:calc(100vh - 100px) !important;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc.full_popup .map{height:calc(100% - 56px) !important;}
+
+	/* ---- [ 주문/결제 쿠폰 ] ---- */
+	.full_popup.order_cp_01 .contents,
+	.full_popup.order_cp_02 .contents {max-height:calc(100% - 257px);}
+	.full_popup.order_cp_03 .contents {max-height:calc(100% - 227px);}
+}
+
+
+/* ------------------------------ [ 12 / 12 Pro / 13 / 13 Pro ] --------------------------------------------------------------------------------------------------------- */
+@media only screen and (width:390px) and (height:844px) {
+	/* 아이폰X 이후 기기 safe area top 영역 44px로 설정 */
+
+	#header {padding-top:44px;}
+	#container {padding-top:100px;}
+	.btn_fixed {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.tap_bar .cotn{padding:0 0 34px;}
+	#footer {padding-bottom:44px;}
+	.foot_pad #footer {padding-bottom:109px;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+	/* .foot_pad #footer.open {padding-bottom:44px;} */
+	/* 장바구니:배달(버튼+문구) */
+	.order.cart.foot_pad #footer,
+	.order.pymnt_order.foot_pad #footer{padding-bottom:139px !important;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+
+	/* 헤더:검색 */
+	.header_wrap .head_search {top:44px;}
+
+	/* ---- 메인 ---- */
+	/* 메인하단 - 효과 */
+	.upto .main_area.fix .tab_menu {padding-top:52px !important;}
+	.upto .sub_top.hide + .up_area #tab1:before {background-color:#fff; content:""; opacity:1; position:fixed; left:0; top:0; height:44px; width:100%; z-index:9999;}
+
+	/* 핫이슈상품:단골점포 */
+	.issue .btn_fixed {bottom:calc(50% + 44px) !important;}
+
+	/* 점포검색:내주변 */
+	.around .map .store_info {bottom:114px !important;}
+
+	/* ---- 픽업 점포:상품상세/장바구니 같이 사용 ---- */
+	/* 점포수량조회 목록-지도형 show-hide */
+	.pick_list_wrap {padding-bottom:180px !important;}
+
+	/* 지도형 */
+	.pick_store .pick_map_wrap .map {height:calc(100vh - 250px) !important;}
+
+	/* ---- 점포 메인 ---- */
+	/* .store.main .sub .sub_tit{top:101px}
+	.store.main .up_layer_area{height:calc(100vh - 135px);} */
+
+	/* ---- [ QR코드 class="qr_code" ] ---- */
+	.ui_qr_code .head {padding-top:44px !important; height:100px !important;}
+
+	/* ---- [ 검색 ] ---- */
+	/* 내주변 */
+	.around .map {height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 상품상세 ] ---- */
+	/* 점포재고수량조회:지도형 */
+	.product.inven_qty .pick_map_wrap .map {height:calc(100vh - 166px) !important;}
+
+	/* 탭메뉴 */
+	.detail_prd .tab_depth1 {top:99px;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc .map {height:calc(100% - 100px) !important;}
+
+	/* ---- 장바구니 편PICK : 점포+재고조회 ---- */
+	.pick_store .pick_map_wrap .map .store_inven_wrap {bottom:114px !important;}
+	/* 상품상세 픽업점포선택:지도 */
+	.product.pick_store .pick_map_wrap .map .store_info{bottom:114px !important;}
+
+	/* ---- [ 바닥팝업 ] ---- */
+	.btm_popup {padding-bottom:44px !important;}
+
+	/* ---- [ 상품재고조회 ] ---- */
+	/* 재고조회:지도영역 */
+	.inven_search .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.inven_search .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.inven_search .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+	/* 상품검색결과 */
+	.inven_search .result .prd_li{max-height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 핫이슈상품 ] ---- */
+	/* 재고조회:지도영역 */
+	.issue_srch .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.issue_srch .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+
+	/* ---- [ MYCU:쿠폰함 ] ---- */
+	/* 재고조회:지도 */
+	.cp_srch .pick_map_wrap .map .store_info{bottom:114px !important}
+
+	/* ---- [ 데이터결과 ] ---- */
+	.result_info.h_100 {height:calc(100vh - 100px);}
+
+	/* 1:1문의작성완료 */
+	.customer.qna .ad_info_wrap {height:calc(100vh - 296px) !important;}
+
+	/* 상품목록(검색) */
+	.product.product_list .top_prd_area{top:100px !important}
+
+	/* --- [MYCU 쿠폰함] --- */
+	/* 재고조회:지도영역 */
+	.cp_srch .pick_map_wrap .map{height:calc(100vh - 312px) !important;}
+
+
+	/* ------------------------------------------------------------ [ 전체팝업 ] ------------------------------------------------------------ */
+	.full_popup {padding-top:44px;}
+	.full_popup .contents {max-height:calc(100vh - 214px);}
+	.no_foot_full_pop .contents {max-height:calc(100vh - 144px);}
+	.full_popup .foot {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.data_none.h_100 {height:calc(100vh - 100px) !important;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc.full_popup .map{height:calc(100% - 56px) !important;}
+
+	/* ---- [ 주문/결제 쿠폰 ] ---- */
+	.full_popup.order_cp_01 .contents,
+	.full_popup.order_cp_02 .contents {max-height:calc(100% - 257px);}
+	.full_popup.order_cp_03 .contents {max-height:calc(100% - 227px);}
+}
+
+/* ------------------------------ [ 13 Pro Max ] --------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (width:428px) and (height:926px) {
+	/* 아이폰X 이후 기기 safe area top 영역 44px로 설정 */
+
+	#header {padding-top:44px;}
+	#container {padding-top:100px;}
+	.btn_fixed {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.tap_bar .cotn{padding:0 0 34px;}
+	#footer {padding-bottom:44px;}
+	.foot_pad #footer {padding-bottom:109px;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+	/* .foot_pad #footer.open {padding-bottom:44px;} */
+	/* 장바구니:배달(버튼+문구) */
+	.order.cart.foot_pad #footer,
+	.order.pymnt_order.foot_pad #footer{padding-bottom:139px !important;} /* 바닥고정버튼+푸터, 탭바+푸터 */
+
+	/* 헤더:검색 */
+	.header_wrap .head_search {top:44px;}
+
+	/* ---- 메인 ---- */
+	/* 메인하단 - 효과 */
+	.upto .main_area.fix .tab_menu {padding-top:52px !important;}
+	.upto .sub_top.hide + .up_area #tab1:before {background-color:#fff; content:""; opacity:1; position:fixed; left:0; top:0; height:44px; width:100%; z-index:9999;}
+
+	/* 핫이슈상품:단골점포 */
+	.issue .btn_fixed {bottom:calc(50% + 44px) !important;}
+
+	/* 점포검색:내주변 */
+	.around .map .store_info {bottom:114px !important;}
+
+	/* ---- 픽업 점포:상품상세/장바구니 같이 사용 ---- */
+	/* 점포수량조회 목록-지도형 show-hide */
+	.pick_list_wrap {padding-bottom:180px !important;}
+
+	/* 지도형 */
+	.pick_store .pick_map_wrap .map {height:calc(100vh - 250px) !important;}
+
+	/* ---- 점포 메인 ---- */
+	/* .store.main .sub .sub_tit{top:101px}
+	.store.main .up_layer_area{height:calc(100vh - 135px);} */
+
+	/* ---- [ QR코드 class="qr_code" ] ---- */
+	.ui_qr_code .head {padding-top:44px !important; height:100px !important;}
+
+	/* ---- [ 검색 ] ---- */
+	/* 내주변 */
+	.around .map {height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 상품상세 ] ---- */
+	/* 점포재고수량조회:지도형 */
+	.product.inven_qty .pick_map_wrap .map {height:calc(100vh - 166px) !important;}
+
+	/* 탭메뉴 */
+	.detail_prd .tab_depth1 {top:99px;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc .map {height:calc(100% - 100px) !important;}
+
+	/* ---- 장바구니 편PICK : 점포+재고조회 ---- */
+	.pick_store .pick_map_wrap .map .store_inven_wrap {bottom:114px !important;}
+	/* 상품상세 픽업점포선택:지도 */
+	.product.pick_store .pick_map_wrap .map .store_info{bottom:114px !important;}
+
+	/* ---- [ 바닥팝업 ] ---- */
+	.btm_popup {padding-bottom:44px !important;}
+
+	/* ---- [ 상품재고조회 ] ---- */
+	/* 재고조회:지도영역 */
+	.inven_search .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.inven_search .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.inven_search .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+	/* 상품검색결과 */
+	.inven_search .result .prd_li{max-height:calc(100vh - 218px) !important;}
+
+	/* ---- [ 핫이슈상품 ] ---- */
+	/* 재고조회:지도영역 */
+	.issue_srch .pick_map_wrap .map .store_info{bottom:120px !important;}
+	.issue_srch .pick_map_wrap .map {height:calc(100vh - 275px) !important}
+	.issue_srch .pick_map_wrap.prd_on .map{height:calc(100vh - 367px) !important}
+
+	/* ---- [ MYCU:쿠폰함 ] ---- */
+	/* 재고조회:지도 */
+	.cp_srch .pick_map_wrap .map .store_info{bottom:114px !important}
+
+	/* ---- [ 데이터결과 ] ---- */
+	.result_info.h_100 {height:calc(100vh - 100px);}
+
+	/* 1:1문의작성완료 */
+	.customer.qna .ad_info_wrap {height:calc(100vh - 296px) !important;}
+
+	/* 상품목록(검색) */
+	.product.product_list .top_prd_area{top:100px !important}
+
+
+	/* --- [MYCU 쿠폰함] --- */
+	/* 재고조회:지도영역 */
+	.cp_srch .pick_map_wrap .map{height:calc(100vh - 312px) !important;}
+
+
+	/* ------------------------------------------------------------ [ 전체팝업 ] ------------------------------------------------------------ */
+	.full_popup {padding-top:44px;}
+	.full_popup .contents {max-height:calc(100vh - 214px);}
+	.no_foot_full_pop .contents {max-height:calc(100vh - 144px);}
+	.full_popup .foot {
+		padding:10px 16px calc(constant(safe-area-inset-bottom) + 44px);
+		padding:10px 16px calc(env(safe-area-inset-bottom) + 44px);
+	}
+	.data_none.h_100 {height:calc(100vh - 100px) !important;}
+
+	/* ---- [ 점포 ] ---- */
+	/* 지도 */
+	.store_loc.full_popup .map{height:calc(100% - 56px) !important;}
+
+	/* ---- [ 주문/결제 쿠폰 ] ---- */
+	.full_popup.order_cp_01 .contents,
+	.full_popup.order_cp_02 .contents {max-height:calc(100% - 257px);}
+	.full_popup.order_cp_03 .contents {max-height:calc(100% - 227px);}
+}

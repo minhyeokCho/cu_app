@@ -1,0 +1,55 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 앱설정 ]
+********************************************************************************************************************************************************************************************* */
+/* ------------------------------ [ 설정 ] ------------------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.setting .tit_back h1,
+.setting .btn_area .btn_menu.home {display:block;}
+.btn_under,.btn_under:link{color:#666; font-size:14px; font-weight:bold; text-decoration:underline;}
+.setting h2 {padding:0 24px 8px;}
+.setting .set_wrap {border-bottom:1px solid #EEEEEE; padding:24px; display:flex; justify-content:space-between; align-items:center;}
+.setting .set_wrap.login {border:none; padding:20px 24px 0;}
+.setting .set_wrap .set_tit {font-weight:bold;}
+.setting .set_wrap .txt {color:#AAAAAA; padding-top:4px; font-size:14px;}
+.setting .set_wrap .btn_switch {padding-left:24px;}
+.setting .set_wrap .btn_under {padding-top:11px;}
+.setting .version .set_wrap {padding:20px 24px;}
+.setting .version .set_wrap:first-child {padding-top:0;}
+.setting .h_31 {background-color:#E8E8E8; border:1px solid #F6F6F6; border-radius:12px; box-sizing:border-box; color:#666666; display:block; font-size:13px; font-weight:bold; line-height:34px; padding:0 12px; height:34px;}
+.setting .set_wrap .version_now p {font-size:14px; text-align:right;}
+.setting .version_now .h_31 {display:none;}
+
+.setting .update .h_31 {display:block;}
+.setting .update p {display:none;}
+.setting .set_wrap .go_right {position:relative; width:16px; height:16px;}
+.setting .set_wrap:last-child {border:none; padding-bottom:0;}
+
+.setting .w_100 {padding:40px 16px 0;}
+
+/* code */
+.popup_app .code_box {padding:20px 24px;}
+
+/* alert */
+.app .alert_pop .cotn strong {color:#37D243;}
+
+/* authority */
+.setting.authority .btn_area .btn_menu.home {display:none;}
+.authority .authority_wrap .info_wrap {padding:16px 24px;}
+.authority .authority_wrap .info_wrap .tit_copy {padding:0;}
+
+/* 이용안내 */
+.guide .contents {overflow-y:hidden; max-height:100vh; position:relative;}
+.guide .contents .head {position:absolute; top:0; right:0; width:100%; z-index:2;}
+.main_guide {height:100vh;}
+.main_guide .guide_wrap {height:100%;}
+.main_guide .guide_wrap .img_wrap {height:100%;}
+.guide .main_guide img {width:100%;}
+.guide .contents .btn_wrap {position:absolute; bottom:34px; left:16px; right:16px;}
+
+/* 포켓CU앱 실행하기 */
+.app_st_wrap h1{text-align:center;margin-bottom:10px;padding-top:20px;}
+.app_st_wrap h1 img{width:64px;}
+.app_start #container{padding-top:0;}
+.app_st_ev img{width:100%;}

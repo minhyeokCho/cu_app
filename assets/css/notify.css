@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 알림 ]
+********************************************************************************************************************************************************************************************* */
+/* ------------------------------ [ 알림메세지 ] ------------------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.notify .tit_back h1 {display:block;}
+
+/* 알림함 */
+.notify .date_wrap {margin:20px 16px 0; text-align:center;}
+.notify .date_wrap .date_tit {background-color:#F6F6F6; border-radius:16px; display:inline-block;}
+.notify .date_wrap .date {font-size:12px; line-height:26px; padding:0 51px; height:26px;}
+.notify .date_wrap .noti {text-align:left;}
+.notify .noti_wrap {padding:0 16px;}
+.notify .tit_24 {color:red; margin-bottom:24px;}
+.noti_info {padding:0 8px 16px;}
+.noti {border-bottom:1px solid #F6F6F6; position:relative; padding:24px 8px;}
+.noti .noti_tit {display:flex; align-items:center; padding-bottom:11px;}
+.noti .noti_tit .noticon {padding-left:5px;}
+.noti .noti_tit .noticon img {vertical-align:middle; width:21px; height:21px;}
+.noti .txt {color:#666666; font-size:14px;}
+.noti .img{margin-top:32px;}
+.noti .img img{max-width:100%;}
+
+/* 알람확인 */
+.noti.deact .noticon {opacity:0.4;}
+.noti.deact .noti_tit .tit_18,
+.noti.deact .tit_16,
+.noti.deact .txt {color:#DDDDDD;}
+
+/* 알림함:데이터없음 */
+
+
+
+

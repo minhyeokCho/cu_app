@@ -1,0 +1,14 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 키핑쿠폰:팝업 ]
+********************************************************************************************************************************************************************************************* */
+
+/* ------------------------------ [ 키핑쿠폰안내 ] ------------------------------------------------------------------------------------------------------------------------- */
+/* setting */
+.keeping .keep_wrap .keep_img img {display:block; width:100%;}
+.keeping .keep_wrap .keep_tit {position:relative;}
+.keeping .keep_wrap .keep_tit .btn_wrap {position:absolute; left:8%; top:53.43%; width:83.04%;}
+.keeping .keep_wrap .keep_tit .tit_person {position:absolute; left:43.34%; transform:translateX(-43.34%); bottom:0;}
+.keeping .keep_wrap .keep_video {position:relative;}
+.keeping .keep_wrap .keep_video .cp_video {width:80%; position:absolute; left:50%; transform:translateX(-50%); top:60.2%;}

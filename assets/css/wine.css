@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+/* *********************************************************************************************************************************************************************************************
+														[ 와인검색 ]
+********************************************************************************************************************************************************************************************* */
+/* setting */
+.wine_svc .head {text-indent:8px;padding-bottom:11px;}
+.wine_svc .contents {padding:0;}
+.wine_result .contents {max-height:100%;}
+
+/* ------------------------------ [ 서비스소개 ] --------------------------------------------------------------------------------------------------------------------------- */
+.wine_svc .svc_info {background-color:#fff; padding:11px 24px 0;}
+.wine_svc .svc_info p {font-size:14px; color:#666;}
+.wine_svc .label_scan {background-color:#fff; padding:11px 16px 11px; position:relative;}
+
+.wine_svc .label_scan .box_shape > .cotn {padding:16px 40px 16px 16px;}
+.wine_svc .label_scan .scan_info_wrap {display:flex; align-items:center;}
+.wine_svc .label_scan .scan_info_wrap .info {margin-left:16px;}
+.wine_svc .label_scan .scan_info_wrap .info p {color:#666; font-size:14px; margin-top:8px;}
+.wine_svc .label_scan .img_wrap {position:relative;}
+.wine_svc .label_scan .img_wrap .img {overflow:hidden; background-color:#fff; border:1px solid #eeeeee; border-radius:16px; box-sizing:border-box; position:relative; height:100px; width:100px;}
+.wine_svc .label_scan .img_wrap .img img {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); height:100%; width:100%;}
+.wine_svc .label_scan .scan_arrow {position:absolute; right:16px; top:50%; transform:translateY(-50%)}
+.wine_svc .wine_info {background-color:#fff; padding:0 16px;}
+.wine_svc .wine_info .box_shape > .cotn {padding:16px;}
+.wine_svc .wine_info .icon_cu {display:inline-block; margin-right:7px; background:url(../images/common/icon_cu_39x24.png) no-repeat; background-size:39px 24px; height:24px; width:39px; vertical-align:middle;}
+.wine_svc .wine_info .txt {color:#666666; font-size:13px;}
+.wine_svc .noti_area .tit_16{padding-bottom:7px;}
+.wine_svc .noti_area {background-color:#fff; padding:0 24px;}
+.wine_svc .noti_area .info_area + .info_area{margin-top:32px;}
+
+/* ------------------------------ [ 검색결과 ] --------------------------------------------------------------------------------------------------------------------------- */
+.wine_info_wrap {display:flex; flex-direction:row; justify-content:center; align-items:center; height:calc(100vh - 156px); text-align:center; background-color:#F6F6F6}
+.wine_info_wrap .img_wrap {position:relative; height:164px; width:164px; margin:0 auto;}
+.wine_info_wrap .img_wrap .img {overflow:hidden; background-color:#fff; border:1px solid #eeeeee; border-radius:24px; box-sizing:border-box; position:relative; height:100%; width:100%;}
+.wine_info_wrap .img_wrap .img img {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:100%;}
+.wine_info_wrap .img_wrap .btn_detail_info {position:absolute; right:8px; bottom:8px; display:flex; align-items:center; justify-content:center; height:36px; width:36px; border-radius:12px; background-color:#37D243;}
+.wine_info_wrap .name_wrap {margin-top:20px;}
+.wine_info_wrap .wine_name_sub {margin-top:11px; font-size:14px;}
+.wine_info_wrap .btn_wrap {margin:32px auto 0; width:70%;}
+
+/* ------------------------------ [ 검색결과없음 ] --------------------------------------------------------------------------------------------------------------------------- */
+.res_none {display:flex; justify-content:center; align-items:center; padding-top:100px;}
+.res_none i {margin:0 auto;}
+.res_none .res_none_txt {margin-top:20px; text-align:center;}
+.res_none .res_none_txt .txt_sub {margin-top:11px;}
+.res_none .btn_wrap {margin:24px auto 0; width:50%;}
+.res_none .info_area {margin-top:40px;}
